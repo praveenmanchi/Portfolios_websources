@@ -1,0 +1,54 @@
+/* MAIN-BG.CSS contains Background Image paths & definition rules powered by CSS
+–––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to replace any BG image is to add image URL in url('....') area of related classname.
+If you need assistance, please go to http://www.designova.com/downloads.html and request a downloadable 
+ZIP pack contains original live preview version with all preview images linked properly, so you can easily 
+replace preview images directly;
+*/
+
+.action-block-01:hover{
+    background-image: url('../images/action/01.jpg');
+}
+.action-block-02:hover{
+    background-image: url('../images/action/02.jpg');
+}
+/*HOME PAGE*/
+.featured-carousel-item-01{
+    background-image: url('../images/featured/01.gif');
+}
+.featured-carousel-item-02{
+    background-image: url('../images/featured/02.jpg');
+}
+.featured-carousel-item-03{
+    background-image: url('../images/featured/03.jpg');
+}
+.featured-carousel-item-04{
+    background-image: url('../images/featured/04.jpg');
+}
+/*HOME PAGE 3*/
+.intro-carousel-item-01{
+    background-image: url('../images/intro/01.jpg');
+}
+.intro-carousel-item-02{
+    background-image: url('../images/intro/02.jpg');
+}
+.intro-carousel-item-03{
+    background-image: url('../images/intro/03.jpg');
+}
+.intro-carousel-item-04{
+    background-image: url('../images/intro/04.jpg');
+}
+/*ABOUT PAGE*/
+.about-carousel-item-01{
+    background-image: url('../images/about/01.jpg');
+}
+.about-carousel-item-02{
+    background-image: url('../images/about/02.jpg');
+}
+.about-carousel-item-03{
+    background-image: url('../images/about/03.jpg');
+}
+.about-carousel-item-04{
+    background-image: url('../images/about/04.jpg');
+}

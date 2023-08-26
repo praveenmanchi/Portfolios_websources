@@ -1,0 +1,120 @@
+@import './node_modules/@glidejs/glide/src/assets/sass/glide.core.scss';
+
+.glide {
+    ul {
+        margin: 0;
+        padding: 0;
+        list-style: none;
+        a {
+            display: block;
+            width: max-content;
+        }
+        .glide__slide {
+            &.invert .jumbotron {
+                background-color: $black;
+                * {
+                    color: white;
+                }
+            }
+        }
+    }
+    .glide__bullets {
+        display: flex;
+        align-items: flex-end;
+        justify-content: flex-start;
+        position: absolute;
+        width: 100%;
+        bottom: 3em;
+        left: 3em;
+        .glide__bullet {
+            display: none;
+            background: none;
+            padding: 0;
+            position: relative;
+            &--active, &.total {
+                display: block;
+            }
+            &.total {
+                padding-left: 1em;
+                margin-left: 1em;
+                color: $black;
+                opacity: .5;
+                &:before {
+                    position: absolute;
+                    content: '';
+                    display: block;
+                    left: 0;
+                    top: -0.25em;
+                    height: 2em;
+                    width: 1px;
+                    background-color: $black;
+                    transform: rotate(45deg);
+                }
+            }
+        }
+    }
+}
+
+.glide:not(.carousel) .glide__slide  {
+    .bg {
+        transition: opacity 1s 1s;
+    }
+    &:not(.glide__slide--animate) .bg {
+        opacity: 0;
+    }
+    @for $i from 1 to 10 {
+        h1,h2,h3,h4,h5,h6,p,img {
+            opacity: 0 !important;
+            transform: translateX(-20px) !important;
+            &:nth-child(#{$i}) { transition: all 1s $i * 0.45s; }
+        }
+    }
+    &--active .bg {
+        animation: scale 20s 1s infinite both;
+    }
+    &--animate {
+        h1,h2,h3,h4,h5,h6,p,img {
+            opacity: 1 !important;
+            transform: translateY(0) !important;
+        }
+    }
+}
+
+@keyframes scale {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+header *, .alt-footer a, .glide__bullets .glide__bullet {
+    transition: color 1s;
+    &.total:before {
+        transition: all 1s;
+    }
+}
+
+.dark-slide {
+    .alt-footer {
+        * {
+            color: white !important;
+        }
+    }
+    .glide__bullets .glide__bullet {
+        color: white !important;
+        &.total:before {
+            background-color: white;
+        }
+    }
+    .glide__bullets .glide__bullet {
+        color: white !important;
+        &.total:before {
+            background-color: white;
+        }
+    }
+}

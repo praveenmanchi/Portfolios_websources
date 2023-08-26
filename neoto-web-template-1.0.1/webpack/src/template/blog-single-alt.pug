@@ -1,0 +1,37 @@
+extends partials/layout.pug
+block content
+    section.pt-0.border-bottom
+        .container.pb-5
+            .row
+                .col-sm-6.offset-sm-3
+                    img.img-fluid.w-100(alt="Neoto - Creative Studio Portfolio Template" src = require('./images/preview/blog-alt1.jpg?preset=blur'))
+            .row.pt-5
+                .col-sm-3.offset-sm-3
+                    h2.in-left Discipline as an inevitable key component
+                .col-sm-3
+                    p.in-top Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text.
+        img.img-fluid.vw-100(alt="Neoto - Creative Studio Portfolio Template" src = require('./images/preview/blog-alt2.jpg?preset=blur'))
+        .container
+            .row.pt-5
+                .col-sm-6.offset-sm-3
+                    h6.border-bottom.pb-5 Written by Harold Davidson &mdash; Published on Nov 23, 2020; 
+            .row.py-5
+                .col-sm-6.offset-sm-3
+                    h2 The orange is blue
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.              
+            .row
+                .col-sm-6.offset-sm-3        
+                    img.img-fluid.w-100(alt="Neoto - Creative Studio Portfolio Template" src = require('./images/preview/blog-alt3.jpg?preset=blur'))    
+            .row.pt-5
+                .col-sm-6.offset-sm-3
+                    blockquote.mb-0
+                        p And You Can Just Strap Up Your Leg And Put Your Mask On, But That Doesn't Make You What You Were.
+                        footer
+                            | Alfred Pennyworth
+                            cite The Dark Knight        
+            .row.py-6
+                .col-sm-6.offset-sm-3
+                    h3 An unobstrusive approach
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.              
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum'.              
+    include partials/comments

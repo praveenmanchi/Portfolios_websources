@@ -1,0 +1,110 @@
+@media screen and (max-width: 1140px){
+
+    #navbar .nav {
+        display: block;
+        text-align: center;
+        > .nav-item {
+            font-size: 2rem;
+            padding: .25em;
+            &:after {
+                display: none;
+            }
+        } 
+    }
+
+}
+
+@media screen and (max-width: 1024px){
+
+    html {
+        font-size: 15px;
+    }
+
+    header {
+        padding: 1em 0;
+    }
+
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    #nav {
+        padding: 5em 2em;
+    }
+
+    .grid {
+        .grid-sizer,  .grid-item {
+            width: 50%;
+            &.wide {
+                width: 100%;
+            }
+        }
+    }
+
+    footer {
+        &.fixed-bottom, &.fixed-bottom.alt-footer {
+            position: relative;
+            * {
+                color: $black !important;
+            }
+            .text-right {
+                text-align: center !important;
+            }
+        }
+    }
+
+}
+
+
+@media screen and (max-width: 768px){
+
+    .massive {
+        font-size: 17vw;
+    }
+
+    .glide ul a, .w-50 {
+        width: auto !important;
+    }
+
+    #nav {
+        padding: 5em 1em;
+    }
+
+    .navbar, .container-fluid, .container { 
+        padding-left: 2rem !important;
+        padding-right: 2rem !important;
+    }
+
+    .navbar .navbar-toggler .toggle-label {
+        width: 6em;
+    }
+
+    .plan {
+        margin: 0 0 1em !important;
+    }
+    
+    .grid {
+        .grid-sizer,  .grid-item {
+            width: 100%;
+        }
+    }
+
+    footer .d-flex {
+        display: block !important;
+        text-align: center;
+        .social, .copy {
+            margin-bottom: 1em;
+        }
+        .to-top {
+            background-color: $black;
+            color: white;
+            border-radius: .2em;
+            padding: .4em;
+        }
+    }
+
+    .glide .glide__bullets {
+        left: 2em;
+        bottom: 2em;
+    }
+}

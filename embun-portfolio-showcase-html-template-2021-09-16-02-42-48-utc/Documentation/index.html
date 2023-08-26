@@ -1,0 +1,643 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1">
+		<title>Embun – Documentation</title>
+		<link rel="stylesheet" href="css/highlight.min.css">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container">
+			<nav>
+				<ul>
+					<li class="parent"><a href="#introduction">Introduction</a></li>
+					<li class="parent"><a href="#html-pages">HTML & Site Structure</a>
+						<ul style="margin-left: 30px">
+								<li><a href="#home1">Home Agency</a></li>
+								<li><a href="#home2">Home Personal</a></li>
+								<li><a href="#about">About</a></li>
+								<li><a href="#work">Work</a></li>
+								<li><a href="#detail">Work Detail</a></li>
+							</ul>
+					</li>
+					<li class="parent"><a href="#change">How to change</a>
+						<ul style="margin-left: 30px">
+							<li><a href="#Logo">Logo</a></li>
+							<li><a href="#bg">Background</a></li>
+							<li><a href="#werk">Image on Work Page</a></li>
+							<li><a href="#nav-werk">Side navbar and transition</a></li>
+						</ul>
+					</li>
+					<li class="parent"><a href="#css">CSS</a></li>
+					<li class="parent"><a href="#javascript">Javascript</a></li>
+					<li class="parent"><a href="#credits">Credits</a></li>
+				</ul>
+			</nav>
+			<main>
+				<section id="introduction">
+					<div class="heading">
+						<h1>Introduction</h1><a class="live-preview" target="_blank" href="http://embun.melankolia.space/">Live Preview</a>
+					</div>
+					<p>Thank you for purchasing Embun template. This documentation will give you an overview of the template and help you to know how to customize it to your requirements.</p>
+					
+					<h3>Requirements</h3>
+					<h4>Text Editor</h4>
+					<p>To modify Embun you should have a text editor. You can use any editor (e.g. <a href="https://atom.io/">Atom</a>, <a href="https://www.sublimetext.com/">Sublime Text</a>, etc.).</p>
+					<h4>FTP Client</h4>
+					<p>To publish your website you will need transfer files to remote server of your hosting. It's very important to understand that you must either have your own server space or use someone else's. The server space can be purchased at many different places around the Internet. You need somewhere to put the files that you purchased so others can find them online. </p>
+					<p>To transfer your files to server you can use different FTP clients (e.g. <a href="https://filezilla-project.org/">FileZilla</a>). How to upload files to server with FileZilla you can read <a href="https://wiki.filezilla-project.org/FileZilla_Client_Tutorial_(en)">here.</a> You should upload the contents of an archive to root directory.</p>
+				</section>
+				<hr>
+				<h1 id="html-pages">HTML & Site Structure</h1>
+				<section id="header">
+						<p>The layout in Embun is flexible and well commented, The general template structure is the same throughout the template. Here is the general structure :</p>
+                    <h3 id="home1">Home Agency</h3>
+                    
+					<img src="img/1.png" alt="1" style="width:100%;">
+					<pre class="language-html"><code>
+	&lt;section class=&quot;home-container&quot;&gt; 
+
+	&lt;!-- Left / Right BIG Hover --&gt;
+	&lt;div class=&quot;left-anim&quot;&gt;&lt;/div&gt;
+	&lt;div class=&quot;right-anim&quot;&gt;&lt;/div&gt;
+	
+	&lt;!-- Background --&gt;
+	&lt;div class=&quot;outer-page&quot;&gt;                                     
+	&lt;/div&gt;
+
+	&lt;!-- logo --&gt;
+	&lt;div class=&quot;logo animated fadeInDown&quot;&gt;          
+	&lt;/div&gt;
+
+	&lt;!-- logo mobile --&gt;
+	&lt;div class=&quot;m-logo animated fadeInDown&quot;&gt;
+	&lt;/div&gt;
+
+	&lt;!-- mobile navbar --&gt;
+	&lt;a class=&quot;m-navbar-left animated fadeInDown&quot; href=&quot;about.html&quot;&gt;             
+	&lt;/a&gt;
+	&lt;a class=&quot;m-navbar-right animated fadeInDown&quot; href=&quot;work.html&quot;&gt;          
+	&lt;/a&gt;
+
+	&lt;!-- Title --&gt;
+	&lt;div class=&quot;title animated fadeInUp&quot;&gt;       
+	&lt;/div&gt;
+
+	&lt;!-- Typed Text Animation --&gt;            
+	&lt;div class=&quot;table&quot;&gt;             
+	&lt;/div&gt;
+	
+	&lt;!-- Button --&gt;
+	&lt;a href=&quot;about.html&quot; class=&quot;nav-lr nav-left&quot;&gt;  
+	&lt;/a&gt;
+	&lt;a href=&quot;work.html&quot; class=&quot;nav-lr nav-right&quot;&gt;         
+	&lt;/a&gt;
+
+	&lt;!-- Social Medoa --&gt;
+	&lt;div class=&quot;social animated fadeInUp&quot;&gt;           
+	&lt;/div&gt;
+	
+	&lt;!-- Copyright --&gt;
+	&lt;div class=&quot;copyright animated fadeInUp&quot;&gt;       
+	&lt;/div&gt;            
+&lt;/section&gt;
+
+&lt;!-- Menu Toggle --&gt;
+&lt;div class=&quot;button_container animated fadeInDown&quot; id=&quot;toggle&quot;&gt;            
+&lt;/div&gt;
+	
+
+&lt;!-- Custom-cursor --&gt;
+&lt;div class=&quot;cursor-dot-outline&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cursor-dot&quot;&gt;&lt;/div&gt;
+					</pre></code>
+           
+                
+				<hr>
+				<h3 id="home2">Home Personal</h3>                    
+				<img src="img/1.2.png" alt="1" style="width:100%;">
+<pre class="language-html">
+	<code>
+&lt;section class=&quot;home-container&quot;&gt; 
+
+&lt;!-- Left / Right BIG Hover --&gt;
+&lt;div class=&quot;left-anim&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;right-anim&quot;&gt;&lt;/div&gt;
+
+&lt;!-- Background --&gt;
+&lt;div class=&quot;outer-page personal&quot;&gt;                                     
+&lt;/div&gt;
+
+&lt;!-- logo --&gt;
+&lt;div class=&quot;logo animated fadeInDown&quot;&gt;          
+&lt;/div&gt;
+
+&lt;!-- logo mobile --&gt;
+&lt;div class=&quot;m-logo animated fadeInDown&quot;&gt;
+&lt;/div&gt;
+
+&lt;!-- mobile navbar --&gt;
+&lt;a class=&quot;m-navbar-left animated fadeInDown&quot; href=&quot;about.html&quot;&gt;             
+&lt;/a&gt;
+&lt;a class=&quot;m-navbar-right animated fadeInDown&quot; href=&quot;work.html&quot;&gt;          
+&lt;/a&gt;
+
+&lt;!-- Title --&gt;
+&lt;div class=&quot;title animated fadeInUp&quot;&gt;       
+&lt;/div&gt;
+
+&lt;!-- Typed Text Animation --&gt;            
+&lt;div class=&quot;table&quot;&gt;             
+&lt;/div&gt;
+
+&lt;!-- Social Media --&gt;
+&lt;div class=&quot;social animated fadeInUp&quot;&gt;           
+&lt;/div&gt;
+
+&lt;!-- Copyright --&gt;
+&lt;div class=&quot;copyright animated fadeInUp&quot;&gt;       
+&lt;/div&gt;            
+&lt;/section&gt;
+
+&lt;!-- Menu Toggle --&gt;
+&lt;div class=&quot;button_container animated fadeInDown&quot; id=&quot;toggle&quot;&gt;            
+&lt;/div&gt;
+
+
+&lt;!-- Custom-cursor --&gt;
+&lt;div class=&quot;cursor-dot-outline&quot;&gt;&lt;/div&gt;
+&lt;div class=&quot;cursor-dot&quot;&gt;&lt;/div&gt;
+	</code>
+</pre>
+
+<hr>
+
+				<h3 id="about">About</h3>                    
+				<img src="img/1.3.png" alt="1" style="width:100%;">
+<pre class="language-html">
+	<code>
+	&lt;!-- main-background --&gt;
+	&lt;div class=&quot;main-detail-bg&quot;&gt;
+		&lt;!-- mouse animation --&gt;
+		&lt;a href=&quot;#&quot;&gt;
+		&lt;/a&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Title--&gt;
+	&lt;div class=&quot;table&quot;&gt;
+		&lt;div class=&quot;valign&quot;&gt;
+			&lt;div class=&quot;container&quot;&gt;
+				&lt;div class=&quot;row&quot;&gt;
+					&lt;!-- title --&gt;
+					&lt;div class=&quot;col-md-12&quot;&gt;
+						&lt;div class=&quot;title-about&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot; data-aos-delay=&quot;200&quot;&gt;
+							&lt;h2&gt;WE&rsquo;RE AN &lt;span&gt;INDEPENDENT&lt;/span&gt;  DIGITAL AGENCY WITH A TEAM OF DESIGNERS &amp; CREATIVE DEVELOPERS WHO &lt;span&gt; LOVE &lt;/span&gt;IN CRAFTING DIGITAL EXPERIENCES&lt;/h2&gt;
+							&lt;div class=&quot;dash&quot;&gt;&lt;/div&gt;
+						&lt;/div&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+
+	&lt;!-- Content --&gt;
+	&lt;div class=&quot;bg-white mt-full&quot;&gt;	
+	&lt;/div&gt;
+
+	&lt;!-- Client --&gt;
+	&lt;div class=&quot;bg-main&quot;&gt;
+	
+	&lt;/div&gt;
+
+	&lt;!-- Address --&gt;
+	&lt;div class=&quot;footer&quot;&gt;
+	&lt;/div&gt;
+	
+	</code>
+</pre>
+<hr>
+
+				<h3 id="work">Work</h3>                    
+				<img src="img/1.4.png" alt="1" style="width:100%;">
+<pre class="language-html">
+	<code>
+&lt;!-- Side Navbar --&gt;
+&lt;nav class=&quot;work-nav&quot;&gt;
+	&lt;div class=&quot;table&quot;&gt;
+		&lt;div class=&quot;valign&quot;&gt;
+			&lt;a class=&quot;item-menu active&quot; data-menuanchor=&quot;firstPage&quot; href=&quot;#firstPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Nat-nat&lt;/span&gt;&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;secondPage&quot; href=&quot;#secondPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Genesis&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;thirdPage&quot; href=&quot;#thirdPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Angsa&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;fourthPage&quot; href=&quot;#fourthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Marmoset&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;fifthPage&quot; href=&quot;#fifthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Senja&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;sixthPage&quot; href=&quot;#sixthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Nellax&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+
+&lt;!-- Work List --&gt;
+&lt;div class=&quot;pagepiling&quot;&gt;
+	&lt;!-- Work 01 --&gt;
+	&lt;div class=&quot;section work-1&quot;&gt;
+		&lt;div class=&quot;layer&quot;&gt;
+			&lt;!-- background --&gt;
+			&lt;div class=&quot;prx bg-work-1&quot;  id=&quot;--1&quot;&gt;
+				&lt;!-- Work Image --&gt;
+				&lt;div class=&quot;img-obj-1&quot; data-depth=&quot;0.20&quot;&gt;&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-md-8&quot;&gt;
+					&lt;div class=&quot;title-work animated fadeInUp delay-0.5s&quot;&gt;
+						&lt;a href=&quot;work-detail.html&quot;&gt;
+						&lt;h3 id=&quot;zoom-fade&quot;&gt;Nat-nat&lt;/h3&gt;
+						&lt;p class=&quot;sub&quot;&gt;Web Development, Branding, UI, UX Desgn&lt;/p&gt;
+						&lt;h4 class=&quot;btn-detail&quot;&gt;Work detail&lt;/h4&gt;&lt;/a&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+	</code>
+</pre>
+
+<hr>
+
+				<h3 id="detail">Work detail</h3>                    
+				<img src="img/1.5.png" alt="1" style="width:100%;">
+				<pre class="language-html">
+					<code>
+&lt;!-- Title --&gt;
+&lt;div class=&quot;table&quot;&gt;
+	&lt;div class=&quot;valign&quot;&gt;
+		&lt;div class=&quot;container&quot;&gt;
+			&lt;div class=&quot;row&quot;&gt;
+				&lt;div class=&quot;col-md-6&quot;&gt;
+					&lt;div class=&quot;title-work-detail&quot;&gt;
+						&lt;h2&gt;Nat-nat&lt;/h2&gt;
+						&lt;p class=&quot;project&quot;&gt;Website Development, UI UX, Branding, Responsive Site, Mobile App &amp; System Development&lt;/p&gt;
+						&lt;div class=&quot;dash&quot;&gt;&lt;/div&gt;
+						&lt;p&gt;Nat-nat is a simulated mission made of 8 motion graphic interstitials and 7 WebGL games, each testing the user on a range of STEM skills that are required for the U.S. Army&rsquo;s most unique career opportunities.&lt;/p&gt;
+					&lt;/div&gt;
+				&lt;/div&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+
+&lt;!-- Content --&gt;
+&lt;div class=&quot;bg-main mt-full&quot;&gt;
+	&lt;div class=&quot;container&quot;&gt;
+		&lt;div class=&quot;row&quot;&gt;
+			&lt;div class=&quot;col-md-8 offset-md-2 text-center&quot;&gt;
+				&lt;div class=&quot;web-detail&quot;&gt;
+					&lt;h3&gt;Websites&lt;/h3&gt;
+					&lt;p class=&quot;m-each&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;Nat-nat website was also developed by us. We focused on improving and optimizing the navigation, making it more intuitive and functional, highlighting videos and attractive images of the complex, creating a differentiated and pleasant experience.&lt;/p&gt;
+
+					&lt;div class=&quot;image-work&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;
+						&lt;img class=&quot;img-fluid&quot; src=&quot;img/work-detail/1.png&quot; alt=&quot;3&quot;&gt; 
+					&lt;/div&gt;  
+
+					&lt;div class=&quot;m-each&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;
+						&lt;a href=&quot;#&quot; class=&quot;btn-link&quot;&gt;launch Website&lt;/a&gt;
+					&lt;/div&gt;
+
+					&lt;div data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;
+						&lt;img class=&quot;img-fluid&quot; src=&quot;img/work-detail/2.jpg&quot; alt=&quot;2&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;p class=&quot;m-each&quot;&gt;Nat-nat website was also developed by us. We focused on improving and optimizing the navigation, making it more intuitive and functional, highlighting videos and attractive images of the complex, creating a differentiated and pleasant experience.&lt;/p&gt;
+
+					&lt;div class=&quot;image-work&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;
+						&lt;img class=&quot;img-fluid&quot; src=&quot;img/work-detail/3.jpg&quot; alt=&quot;2&quot;&gt;
+					&lt;/div&gt;
+
+					&lt;div class=&quot;image-work&quot; data-aos-once=&quot;true&quot; data-aos=&quot;fade-up&quot;&gt;
+						&lt;img class=&quot;img-fluid&quot; src=&quot;img/work-detail/4.jpg&quot; alt=&quot;2&quot;&gt;
+					&lt;/div&gt;                         
+				&lt;/div&gt;
+				&lt;!-- Navigation Bottom --&gt;
+				&lt;ul class=&quot;prev-nex-btn&quot;&gt;
+					&lt;li&gt;&lt;a href=&quot;work-detail.html&quot;&gt;Previous Project&lt;/a&gt;&lt;/li&gt;
+					&lt;li&gt;&lt;a href=&quot;work-detail.html&quot;&gt;Next Project&lt;/a&gt;&lt;/li&gt;
+				&lt;/ul&gt;
+			&lt;/div&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/div&gt;
+					</code>
+				</pre>
+
+
+
+
+
+				<hr>
+				<h1 id="change">How to change</h1>
+				<section id="Logo">
+				<h2>Logo</h2>
+				<p>First go to <span class="mark">/css/style.css</span> directory </p>
+	<pre class="language-css">
+		<code>
+		.logo {
+			position: fixed;
+			top: 4%;
+			width: 150px;
+			height: 30px;
+			<b>background: url('../img/logo.png');</b> //here			
+			left: 100px;
+			z-index: 99;
+			letter-spacing: 26px;
+		}
+		.logo a {
+			color: transparent;
+		}
+		.logo.\-active {
+			<b>background: url('../img/logo-active.png') !important;</b> //here
+		}
+		</code>
+	</pre>
+		
+					<p>Then feel free to change it</p>
+				</section>
+
+				<section id="bg">
+					<h2>Background</h2>
+					<img src="img/bg-1.png" alt="1" style="width:100%;">
+					<img src="img/bg-2.png" alt="1" style="width:100%;">
+					<p>First go to <span class="mark">/css/style.css</span> directory </p>
+		<pre class="language-css">
+			<code>
+	.outer-page {
+		background-image: url('../img/home-bg-layer.jpg'); //for agency page(back)
+		background-repeat: no-repeat;
+		background-origin: border-box;
+		background-attachment: fixed;
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		top: 0;
+		left: 0;
+		padding: 100px;
+		background-color: #111111;
+	}
+	.outer-page.\personal{
+		background-image: url('../img/homr-bg-personal.jpg') !important; //for personal page
+		background-size: cover;
+		background-position: 60% bottom;
+	}
+	.inner-page {
+		z-index: 2;
+		display: block;
+		height: 100%;
+		width: 100%;
+		position: relative;
+		overflow: hidden;
+		background-color: #161616;
+		background-image: url('../img/home-bg.jpg'); //for agency page(front)
+		background-repeat: no-repeat;
+	}
+			</code>
+		</pre>
+			
+						<p>Then feel free to change it</p>
+					</section>
+
+					<section id="werk">
+						<h2>Image on work page</h2>
+						<img src="img/bg-3.png" alt="1" style="width:100%;">
+					
+						<p>First go to <span class="mark">/css/style.css</span> directory </p>
+			<pre class="language-css">
+				<code>
+		.bg-work-1 {
+			position: relative;
+			height: 100%;
+			width: 100%;
+			background: url('../img/works/1.jpg'); //for background
+			background-attachment: fixed;
+			background-size: cover;
+			background-repeat: no-repeat;
+			background-position: center bottom;
+		}
+		.img-obj-1{
+			width: 50%;
+			height: 50%;
+			left: 40% !important;
+			top: 30% !important;
+			background-position: center center;
+			background: url('../img/works/obj-1.png'); //for object
+			background-size: contain;
+			background-repeat: no-repeat;
+			background-position: center center;
+		}
+				</code>
+			</pre>
+				
+							<p>Then feel free to change it</p>
+						</section>
+
+					<section id="nav-werk">
+						<h2>Work Side navbar</h2>
+						<img src="img/bg-4.png" alt="1" style="width:100%;">
+					
+						<p>First go to <span class="mark">/work.html</span> directory </p>
+			<pre class="language-html">
+				<code>
+&lt;nav class=&quot;work-nav&quot;&gt;
+	&lt;div class=&quot;table&quot;&gt;
+		&lt;div class=&quot;valign&quot;&gt;
+			&lt;a class=&quot;item-menu active&quot; data-menuanchor=&quot;firstPage&quot; href=&quot;#firstPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Nat-nat&lt;/span&gt;&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;secondPage&quot; href=&quot;#secondPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Genesis&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;thirdPage&quot; href=&quot;#thirdPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Angsa&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;fourthPage&quot; href=&quot;#fourthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Marmoset&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;fifthPage&quot; href=&quot;#fifthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Senja&lt;/span&gt;
+			&lt;/a&gt; 
+			&lt;a class=&quot;item-menu&quot; data-menuanchor=&quot;sixthPage&quot; href=&quot;#sixthPage&quot;&gt;
+				&lt;span class=&quot;text&quot;&gt;Nellax&lt;/span&gt;
+			&lt;/a&gt;
+		&lt;/div&gt;
+	&lt;/div&gt;
+&lt;/nav&gt;
+				</code>
+			</pre>
+			<p>Second go to <span class="mark">/js/work.js</span> directory. Anchor name <strong>must</strong> same as data-menuanchor in html </p>
+			<pre class="language-js">
+				<code>
+// Work pagepolling scroll
+$('.pagepiling').pagepiling({
+	menu: '.work-nav',
+	direction: 'vertical',
+	verticalCentered: true,
+	sectionsColor: [],
+	anchors:  ['firstPage', 'secondPage', 'thirdPage', 'fourthPage', 'fifthPage', 'sixthPage'], here
+				</code>
+			</pre>
+				
+							<p>Then for transition and parallax setup</p>
+
+							<p><span class="mark">Transition (be carefully to change)</span></p>
+<pre class="language-js">
+	<code>
+onLeave: function(index, nextIndex, direction){
+	var indexNumber= [1, 2, 3, 4, 5, 6]; // <p><span class="mark">Number of your transition/slide (default is to 6)</span>	</p> 
+	for(var i = 0; i < indexNumber.length; i++) {
+		if(indexNumber){
+			$('.title-work').removeClass('animated fadeInUp delay-0.5s');
+			} 
+	}    
+},
+afterLoad: function(anchorLink, index){
+	var indexNumber= [1, 2, 3, 4, 5, 6];
+	for(var i = 0; i < indexNumber.length; i++) {
+		if(indexNumber){
+				$('.title-work').addClass('animated fadeInUp delay-0.5s');
+			} 
+	}         
+},
+	</code>
+</pre>
+<p><span class="mark">Parallax object (be carefully to change)</span></p>
+<pre class="language-js">
+	<code>
+// Parallax setup on works
+var scene = ['#--1', '#--2', '#--3', '#--4', '#--5', '#--6']; // change by ID same as on work.html
+var sceneSelector = document.querySelectorAll(".layer .prx");
+for(var i = 0; i < scene.length; i++) {
+	scene[i] = new Parallax(sceneSelector[i],{
+			invertX: !0,
+			invertY: !0,
+			frictionX: .1,
+			frictionY: .05
+		});
+		
+	};
+	</code>
+</pre>
+<p>change by ID same as on work.html</p>
+<pre class="language-html">
+	<code>
+&lt;div class=&quot;prx bg-work-2&quot; id=&quot;--2&quot;&gt;
+&lt;div class=&quot;prx bg-work-3&quot; id=&quot;--3&quot;&gt;
+&lt;div class=&quot;prx bg-work-4&quot; id=&quot;--4&quot;&gt;
+	</code>
+</pre>
+						</section>
+				
+                <hr>
+				<h1 id="css">CSS</h1>
+				<p>All CSS files located in <span class="mark">/css</span> directory. Template has 3 css files:</p>
+				<ul>
+					<li>plugin.css</li>
+						<ul>
+							<li>animate.min.css</li>
+							<li>bootstrap.min.css</li>
+							<li>aos.css</li>
+							<li>jquery.pagepilling.min.css</li>
+							<li>loader.css</li>
+							<li>all.css</li>
+						</ul>
+                    <li>style.css</li>
+                    <li>responsive.css</li>
+                </ul>
+                <h2>all.css</h2>
+				<p>Get vector icons and social logos on your website with Font Awesome, the web’s most popular icon set and toolkit. See more at <a href="https://fontawesome.com/">fontawesome.com</a></p>
+				<h2>aos.css</h2>
+                <p>Animate On Scroll Library See more at <a href="https://michalsnik.github.io/aos/">https://michalsnik.github.io/aos/</a></p>
+				<h2>bootstrap.min.css</h2>
+				<p>File with styles of Boostrap 4 Framework. It contains only grid system, other Boostrap styles not included. See more at <a href="http://getbootstrap.com">getbootstrap.com</a>.</p>
+				<h2>jquery.pagepilling.min.css</h2>
+				<p>Create an original scrolling site. See more at <a href="https://github.com/alvarotrigo/pagePiling.js">alvarotrigo/pagePiling</a>.</p>
+				<h2>style.css</h2>
+				<p>This is a main CSS file with 5 different sections:</p>
+				<ol>
+					<li>Common Style</li>
+					<li>Home</li>
+					<li>Work</li>
+					<li>Work detail</li>
+					<li>About</li>
+                </ol>
+                <h4>responsive.css</h4>
+				<p>Section with responsive layout has different media quires. All media queries arranged in order of decay. If you want to add your media query, add it so as not to upset the order. To add you media query use the syntax:</p>
+				<pre><code>@media (max-width: Npx) {
+    /* Your Code Here */
+}</code></pre>
+				<p>Where N means number of pixels of screen.</p>
+				<hr>
+				<h1 id="javascript">Javascript</h1>
+				<p>All javascript files located in <span class="mark">/js</span> directory. Template require 7 javascript plugins:</p>
+				<ol>
+					<li>jquery-3.3.1.min.js</li>
+					<li>plugin.js</li>
+						
+					<li>plugin-work.js</li>
+						<ul>
+							<li>parallax.js</li>
+							<li>pagepilling.js</li>
+						</ul>
+				
+				</ol>
+				<p>Also template require main javascript file with user's functions called <span class="mark">custom.js</span> and <span class="mark">work.js</span> .</p>
+				<h2>jquery-3.3.1.min.js</h2>
+				<p>jQuery library. See more at <a href="http://jquery.com">jquery.com</a>.</p>
+                <h2>jquery.pagepilling.min.js</h2>
+				<p>Create an original scrolling site. See more at <a href="https://github.com/alvarotrigo/pagePiling.js">alvarotrigo/pagePiling</a>.</p>
+				<h2>parallax.min.js</h2>
+				<p>Background plugin. See more at <a href="http://matthew.wagerfield.com/parallax/">http://matthew.wagerfield.com/parallax/</a>.</p>
+				
+				<h2>custom.js</h2>
+				<p>This is a user's javascript file with main function like different calling plugins and some own scripts. File has 8 sections:</p>
+				<ol>
+					<li>Preloader</li>
+					<li>Navbar</li>
+					<li>Custom Cursor</li>
+				</ol>
+				<h2>work.js</h2>
+				<p>This is a user's javascript file with main function like different calling plugins and some own scripts. File has 8 sections:</p>
+				<ol>
+					<li>Preloader</li>
+					<li>Navbar</li>
+					<li>Page Slide Work</li>
+					<li>Parallax setup</li>
+					<li>Custom Cursor</li>
+				</ol>
+				</pre>
+				<hr>
+				<h1 id="credits">Credits</h1>
+                <p>All images and icon come from :</p>
+				<ul>
+					<li><a href="https://www.pexels.com/">Pexels</a></li>
+					<li><a href="https://www.behance.com/">Behance</a></li>
+                </ul>
+                
+
+                <hr>
+                <br>
+                <p>Once again, thank you so much for purchasing this theme. As I said at the beginning, I'd be glad to help you if you have any questions relating to this theme. No guarantees, but I'll do my best to assist. If you have a more general question relating to the themes on ThemeForest, you might consider visiting the forums and asking your question in the "Item Discussion" section.</p>
+			</main>
+		</div>
+		<script src="js/plugins.min.js"></script>
+
+	</body>
+</html>

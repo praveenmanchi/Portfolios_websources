@@ -1,0 +1,34 @@
+extends partials/layout-alt-footer.pug
+block content
+    .glide.slider.vh-100
+        .glide__track.h-100(data-glide-el='track')
+            ul.glide__slides.h-100
+                li.glide__slide.h-100
+                    .jumbotron.jumbotron-fluid.h-100.d-flex.align-items-center
+                        .bg.o-8(style='background-image:url('+require("./images/preview/project6.jpg?preset=blur")+')')
+                        .container-fluid.text-center
+                            h1.massive Glide Slider
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.h-100.d-flex.align-items-end
+                        .bg.o-8(style='background-image:url('+require("./images/preview/slide2.png?preset=blur")+')')
+                        .container-fluid.py-6
+                            h1.massive Align Stuff
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.h-100.d-flex.align-items-end
+                        .bg.o-8(style='background-image:url('+require("./images/preview/slide4.png?preset=blur")+')')
+                        .container-fluid.py-6.text-right
+                            h1.massive Stand Out
+                li.glide__slide
+                    .jumbotron.jumbotron-fluid.h-100.d-flex.align-items-end
+                        .bg.o-8(style='background-image:url('+require("./images/preview/slide1.png?preset=blur")+')')
+                        .container-fluid.py-6
+                            a.no-link(href = 'project-single.html')
+                                h1.massive 
+                                    span.d-block Dark &amp;
+                                    span.d-block Light
+        .glide__bullets(data-glide-el='controls[nav]')
+            .glide__bullet(data-glide-dir='=0') 1
+            .glide__bullet(data-glide-dir='=1') 2
+            .glide__bullet(data-glide-dir='=2') 3
+            .glide__bullet(data-glide-dir='=3') 4
+            .glide__bullet.total 4

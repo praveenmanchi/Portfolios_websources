@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Portfolio style 4</title>
+    <meta charset="utf-8">
+    <meta name="description" content="Creative Portfolio HTML Template">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <link rel="icon" type="image/png" href="assets/img/favicon.png">
+    <link rel="stylesheet" href="assets/css/vendor/grid.min.css">
+    <link rel="stylesheet" href="assets/css/vendor/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/vendor/socicon.css">
+    <link rel="stylesheet" href="assets/css/vendor/swiper.min.css">
+    <link rel="stylesheet" href="assets/css/ms-main.css">
+  </head>
+  <body data-theme="light">
+    <!--Navigation-->
+    <header class="main-header js-main-header auto-hide-header">
+      <div class="main-header__layout">
+        <div class="main-header__logo">
+          <div class="logo-dark"><a href="index.html"><img src="assets/img/logo_d.svg" alt="Jack Ryan - Creative Portfolio HTML Template"></a></div>
+        </div>
+        <button class="btn btn--subtle main-header__nav-trigger js-main-header__nav-trigger" aria-label="Toggle menu" aria-expanded="false" aria-controls="main-header-nav"><i class="main-header__nav-trigger-icon" aria-hidden="true"></i><span>menu</span></button>
+        <nav class="main-header__nav js-main-header__nav" id="main-header-nav" aria-labelledby="primary-menu">
+          <ul class="dropdown__wrapper dropdown__trigger" id="primary-menu">
+            <li class="menu-item menu-item-has-children"> <a>Home</a>
+              <ul class="sub-menu">
+                <li class="menu-item"> <a href="slider_parallax.html">Slider Parallax</a></li>
+                <li class="menu-item"><a href="index.html">Slider Fade</a></li>
+                <li class="menu-item"><a href="slider_carousel.html">Slider Carousel</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children"> <a>Portfolio</a>
+              <ul class="sub-menu">
+                <li class="menu-item"> <a href="portfolio_1.html">Portfolio style 1</a></li>
+                <li class="menu-item"><a href="portfolio_2.html">Portfolio style 2</a></li>
+                <li class="menu-item"><a href="portfolio_3.html">Portfolio style 3</a></li>
+                <li class="menu-item"><a href="portfolio_4.html">Portfolio style 4</a></li>
+                <li class="menu-item"><a href="portfolio_5.html">Portfolio style 5</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children"> <a>News</a>
+              <ul class="sub-menu">
+                <li class="menu-item"> <a href="blog_sidebar.html">Blog With Sidebar</a></li>
+                <li class="menu-item"><a href="blog_no_sidebar.html">Blog No Sidebar</a></li>
+                <li class="menu-item"><a href="blog_list.html">Blog List Style</a></li>
+                <li class="menu-item"><a href="blog_card.html">Blog Card Style</a></li>
+              </ul>
+            </li>
+            <li class="menu-item menu-item-has-children"> <a>Pages</a>
+              <ul class="sub-menu">
+                <li class="menu-item"><a href="single_portfolio.html">Single Portfolio</a></li>
+                <li class="menu-item"><a href="single_post.html">Single Post</a></li>
+                <li class="menu-item"><a href="404.html">Page 404</a></li>
+              </ul>
+            </li>
+            <li class="menu-item"> <a href="about.html">About</a></li>
+            <li class="menu-item"> <a href="contacts.html">Contacts</a></li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--Hero-->
+    <div class="margin-top-xl"></div>
+    <section class="hero hero--overlay-layer hero-default">
+      <div class="container">
+        <div class="hero__content text-left"><span>Portfolio style 4</span>
+          <h1>My amazing works</h1>
+          <p>Globally e-enable an expanded array of bandwidth before process-centric deliverables.</p>
+        </div>
+      </div>
+    </section>
+    <div class="container ms-content">
+      <div class="subnav margin-bottom--lg">
+        <div class="subnav__container"> 
+          <div class="filter-nav filter-nav--expanded js-filter-nav">
+            <button class="reset btn btn--subtle is-hidden js-filter-nav__control" aria-label="Select a filter option" aria-controls="filter-nav"><span class="js-filter-nav__placeholder" aria-hidden="true">All Products</span>
+              <svg class="icon icon--xxs margin-left-xxs" aria-hidden="true" viewBox="0 0 12 12">
+                <polyline points="0.5 3.5 6 9.5 11.5 3.5" fill="none" stroke-width="1" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"></polyline>
+              </svg>
+            </button>
+            <div class="filter-nav__wrapper js-filter-nav__wrapper" id="filter-nav">
+              <nav class="filter-nav__nav js-filter-nav__nav">
+                <ul class="filtr-btn filter-nav__list js-filter-nav__list">
+                  <li class="filter-nav__item subnav__link" data-filter="*">
+                    <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus active" aria-current="true">All</button>
+                  </li>
+                  <li class="filter-nav__item subnav__link" data-filter=".design">
+                    <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus">Design</button>
+                  </li>
+                  <li class="filter-nav__item subnav__link" data-filter=".project">
+                    <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus">Project</button>
+                  </li>
+                  <li class="filter-nav__item subnav__link" data-filter=".trend">
+                    <button class="reset filter-nav__btn js-filter-nav__btn js-tab-focus">Trend</button>
+                  </li>
+                  <li class="filter-nav__marker js-filter-nav__marker" aria-hidden="true"></li>
+                </ul>
+                <button class="reset filter-nav__close-btn is-hidden js-filter-nav__close-btn js-tab-focus" aria-label="Close navigation">
+                  <svg class="icon" viewBox="0 0 16 16" aria-hidden="true">
+                    <g stroke-width="1" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10">
+                      <line x1="13.5" y1="2.5" x2="2.5" y2="13.5"></line>
+                      <line x1="2.5" y1="2.5" x2="13.5" y2="13.5"></line>
+                    </g>
+                  </svg>
+                </button>
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="row ms-p2 work-grid parent grid grid-gap-lg grid-content portfolio-feed">
+                <div class="grid-sizer col-xs-12 col-md-4 col-sm-6 "></div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  design">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Servant of academy">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Servant of academy">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">design</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Servant of academy</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  project">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="The kissing eyes">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="The kissing eyes">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">project</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>The kissing eyes</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  trend">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Silk of secrets">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Silk of secrets">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">trend</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Silk of secrets</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  project">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Emerald in the children">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Emerald in the children">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">project</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Emerald in the children</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  design">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Wind in the storms">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Wind in the storms">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">design</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Wind in the storms</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  trend">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Legacy of rainbow">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Legacy of rainbow">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">trend</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Legacy of rainbow</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  trend">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="Dance and night club">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="Dance and night club">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">trend</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>Dance and night club</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  project">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="All in love with water">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="All in love with water">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">project</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>All in love with water</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+                <div class="grid-item mb-5 col-xs-12 col-md-4 col-sm-6  design">
+                  <div class="work-card card--is-link"><a class="work-card__img-link" href="single_portfolio.html" aria-label="The wizards of the soul">
+                      <figure class="work-card__img media-wrapper media-wrapper--21:9"><img src="assets/img/portfolio/jr_pf.png" alt="The wizards of the soul">
+                        <div class="glow-wrap"><i class="glow vertical"></i></div>
+                      </figure></a>
+                    <div class="work-card__content"><span class="work-card__badge margin-bottom-xxs">design</span>
+                      <a class="work-card__title" href="single_portfolio.html">
+                        <h3>The wizards of the soul</h3></a>
+                      <a class="work-card__link" href="single_portfolio.html">Show Project
+                        <svg class="icon" viewBox="0 0 12 12">
+                          <g stroke-width="1" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <line x1="11.5" y1="6" x2="0.5" y2="6"></line>
+                            <polyline points="7.5 2 11.5 6 7.5 10"></polyline>
+                          </g>
+                        </svg></a>
+                    </div>
+                  </div>
+                </div>
+      </div>
+      <div class="ms-pagination works-pagination">
+        <button class="btn btn--sm btn-load-more btn--primary btn--preserve-width">Load More</button>
+      </div>
+    </div>
+    <!--Footer--><a class="back-to-top js-back-to-top back-to-top--is-visible" data-offset="500" data-duration="300">
+      <svg viewBox="0 0 20 20">
+        <path d="M17,0H3C1.3,0,0,1.3,0,3v14c0,1.7,1.3,3,3,3h14c1.7,0,3-1.3,3-3V3C20,1.3,18.7,0,17,0z M12.3,11.7L11,10.4V16H9v-5.6 l-1.3,1.3l-1.4-1.4L10,6.6l3.7,3.7L12.3,11.7z M14,6H6V4h8V6z"></path>
+      </svg></a>
+    <footer class="ms-footer">
+      <div class="footer-contacts">
+        <div class="container footer-c__info">
+          <div class="ms-logo__default">
+            <div class="logo-light"><a href="/"><img src="assets/img/logo_w.svg" alt="Jack Ryan - Creative Portfolio HTML Template"></a></div>
+          </div>
+          <div class="footer__menu">
+            <ul class="menu" id="footer-menu">
+              <li class="menu-item"><a href="about.html">About</a></li>
+              <li class="menu-item"><a href="contacts.html">Contacts</a></li>
+              <li class="menu-item"><a href="#">Privacy</a></li>
+            </ul>
+          </div><ul class="socials">
+          <li class="ms-btn"><a class="socicon-twitter" title="Twitter" target="_blank" href="http://twitter.com/"></a></li>
+          <li class="ms-btn"><a class="socicon-dribbble" title="Dribbble" target="_blank" href="http://dribbble.com/"></a></li>
+          <li class="ms-btn"><a class="socicon-facebook" title="Facebook" target="_blank" href="https://www.facebook.com/"></a></li>
+          <li class="ms-btn"><a class="socicon-instagram" title="Instagram" target="_blank" href="https://www.instagram.com/"></a></li>
+        </ul></div>
+      </div>
+      <div class="footer-copyright">
+        <p>Copyright © 2020. Developed by MadSparrow</p>
+      </div>
+    </footer>
+    <!--Libs-->
+    <script src="assets/js/vendor/jquery-3.5.1.min.js"></script>
+    <script src="assets/js/vendor/modernizr.js"></script>
+    <script src="assets/js/vendor/gsap.min.js"></script>
+    <script src="assets/js/vendor/imagesLoaded.min.js"></script>
+    <script src="assets/js/vendor/isotope.pkgd.min.js"></script>
+    <script src="assets/js/vendor/swiper.min.js"></script>
+    <script src="assets/js/vendor/fslightbox.js"></script>
+    <script src="assets/js/util.js"></script>
+    <script src="assets/js/app.js"></script>
+  </body>
+</html>

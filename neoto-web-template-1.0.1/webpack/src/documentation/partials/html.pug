@@ -1,0 +1,48 @@
+section#HTML.border-bottom.py-6
+  .container
+    .col-7
+      h2 HTML structure
+      p Neoto maintains a default HTML structure throughout the template. This makes it easy to mix and reuse templates. For instance, if you want to have a certain section to be on another page, just copy and paste the entire component.
+      pre.
+        &lt;html lang="en"&gt;
+          &lt;head&gt;
+            &lt;head&gt;
+              // Meta
+              // Styles
+              // Page title
+            &lt;/head&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+              &lt;!-- Main Header--&gt;
+              &lt;header class="fixed-top"&gt;
+                &lt;a class="navbar-brand" href="/"&gt;
+                  // Brand images
+                  &lt;img src="img/logo.svg"&gt;
+                  &lt;img src="img/logo-white.svg"&gt; // Inverted logo
+                &lt;/a&gt;
+                &lt;button class="navbar-toggler"&gt; // Toggles navigation
+                &lt;/button&gt;
+                &lt;!-- Main Navigation --&gt;
+                &lt;ul class="nav"&gt;
+                  &lt;li class="nav-item"&gt; &lt;a class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+                  &lt;li class="nav-item"&gt; &lt;a class="nav-link"&gt;Pages&lt;/a&gt;&lt;/li&gt;
+                  ... Etc.
+                &lt;/ul&gt;
+              &lt;/header&gt;
+              &lt;main&gt;
+                &lt;!-- section --&gt;
+                &lt;section id="home"&gt;
+                  // Section content
+                &lt;/section&gt;
+              &lt;/main&gt; // End main
+              &lt;footer&gt;
+                // Footer contents
+              &lt;/footer&gt;
+            &lt;!-- Scripts--&gt;
+            // Scripts
+          &lt;/body&gt;
+        &lt;/html&gt;
+      p
+        strong Note: Its important to leave this structure intact. So when copying a section, make sure its inside the "main" element.
+      h4 Bootstrap
+      p Neoto is powered by Bootstrap v4.5.2. All the goodies that <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap</a> has to offer work well with Neoto.

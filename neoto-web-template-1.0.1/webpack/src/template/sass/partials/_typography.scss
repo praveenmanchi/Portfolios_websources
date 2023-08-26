@@ -1,0 +1,94 @@
+html {
+    font-size: 16px;
+}
+
+body {
+    font-family: 'Inter';
+}
+
+h1,h2,h3,h4,h5,h6 {
+    letter-spacing: -0.033em;
+    margin-bottom: .5em;
+}
+
+h1 { 
+    font-size: 3.33em;
+    font-weight: 400;
+}
+
+h2 { 
+
+}
+
+h3 { 
+
+}
+
+h4 { 
+
+}
+
+h5 { 
+
+}
+
+h6 { 
+    text-transform: uppercase;
+    font-size: .9em;
+    font-weight: 400;
+    letter-spacing: .05em;
+    opacity: .7 !important;
+}
+
+.massive {
+    font-size: 10rem;
+    font-weight: 900;
+    letter-spacing: -0.07em;
+    line-height: 0.77;
+    text-indent: -.039em;
+    margin-bottom: .25em;
+    sub, sup {
+        font-size: .2em;
+    }
+}
+
+.invert .massive {
+    text-shadow: 0 0 .25em rgba(0,0,0,.15);
+}
+
+p {
+    color: $grey;
+    font-size: 1.1em;
+    line-height: 1.7;
+}
+
+strong {
+    color: $black;
+}
+
+.text-white, .dark-slide {
+    p {
+        color: rgba(255,255,255,.8);
+    }
+    strong {
+        color: white;
+    }
+}
+
+.grey {
+    color: #999;
+}
+
+h1,h2,h3,h4,h5,h6,p {
+    &:first-child {
+        margin-top: 0;
+    }
+    &:last-child {
+        margin-bottom: 0;
+    }
+}
+
+.typed-cursor {
+    font-weight: 300;
+    font-size: .75em;
+}

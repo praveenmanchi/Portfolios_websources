@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Neoto | Portfolio HTML Template</title>
+  <link href="../template/main.bundle.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css2?family=Lexend+Giga&amp;display=swap" rel="stylesheet">
+  <link rel="apple-touch-icon" sizes="180x180" href="../template/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../template/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../template/favicon/favicon-16x16.png">
+  <link rel="manifest" href="../template/favicon/site.webmanifest">
+  <link rel="mask-icon" href="../template/favicon/safari-pinned-tab.svg" color="#777777">
+  <meta name="msapplication-TileColor" content="#999999">
+  <meta name="theme-color" content="#999999">
+</head>
+  <body>
+<header class="fixed-top ">
+  <div class="navbar"><a class="navbar-brand" href="index.html"> <img class="default" src="../template/images/logo.svg"><img class="inverted" src="../template/images/logo-white.svg"></a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar"><span class="toggle-label">Menu</span><span class="toggle-label-close">Close</span><span class="toggle-icon"><span class="line"></span><span class="line"></span></span></button>
+  </div>
+  <ul id="nav">
+    <li class="nav-item"><a class="nav-link anchor-link" href="#HTML">HTML</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#CSS">CSS</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#JS">JS</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#Navigation">Navigation</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#Lightbox">Lightbox</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#Slider">Slider</a></li>
+    <li class="nav-item"><a class="nav-link anchor-link" href="#Contact">Form</a></li>
+  </ul>
+</header>
+    <main>
+<section class="border-bottom py-6" id="Start">
+  <div class="container">
+    <div class="col-7">
+      <h1>Documentation</h1>
+      <h2>Foreword</h2>
+      <p class="text-size-1">Hello and thank you for purchasing Neoto! Its creator, ThemeVillain is always striving for the best possible quality for its templates and themes. If you encounter bugs or need something special done with your template, please contact support@themevillain.com.</p><br>
+      <h3>Tips from a pro</h3>
+      <p>Trust me, these are helpful!</p>
+      <p>
+        <ul class="list">
+          <li>Never start from scratch.</li>
+          <li>Use the custom.css included to make changes to your styles.</li>
+          <li>Please read these docs carefully before contacting support. You might be helped more quickly.</li>
+          <li>If these docs don&apos;t help with custom, non-template issues, use Google or stackoverflow for your specific problem.</li>
+          <li>Use find and replace all, if you&apos;d like to change more files at once.</li>
+          <li>Contact support@themevillain.com for customisation jobs or bug reports.</li>
+        </ul>
+      </p>
+      <h3>Webpack 4</h3>
+      <p>Neoto includes the entire Webpack 4 project that is used to create the template. You can use the README.md to get started.</p>
+      <h4>Why Webpack?</h4>
+      <p>By using webpack, you can develop much faster. Here's some of the features that I used to create Neoto:</p>
+      <p>
+        <ul class="list">
+          <li>Pug (template engine to output HTML files)</li>
+          <li>SASS (powerful CSS precompiler)</li>
+          <li>Hot reload (instantly see your changes)</li>
+          <li>Minification and bundling (makes your production code VERY efficient)</li>
+        </ul>
+      </p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="HTML">
+  <div class="container">
+    <div class="col-7">
+      <h2>HTML structure</h2>
+      <p>Neoto maintains a default HTML structure throughout the template. This makes it easy to mix and reuse templates. For instance, if you want to have a certain section to be on another page, just copy and paste the entire component.</p>
+      <pre>&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;head&gt;
+      // Meta
+      // Styles
+      // Page title
+    &lt;/head&gt;
+  &lt;/head&gt;
+  &lt;body&gt;
+      &lt;!-- Main Header--&gt;
+      &lt;header class="fixed-top"&gt;
+        &lt;a class="navbar-brand" href="/"&gt;
+          // Brand images
+          &lt;img src="img/logo.svg"&gt;
+          &lt;img src="img/logo-white.svg"&gt; // Inverted logo
+        &lt;/a&gt;
+        &lt;button class="navbar-toggler"&gt; // Toggles navigation
+        &lt;/button&gt;
+        &lt;!-- Main Navigation --&gt;
+        &lt;ul class="nav"&gt;
+          &lt;li class="nav-item"&gt; &lt;a class="nav-link"&gt;Home&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="nav-item"&gt; &lt;a class="nav-link"&gt;Pages&lt;/a&gt;&lt;/li&gt;
+          ... Etc.
+        &lt;/ul&gt;
+      &lt;/header&gt;
+      &lt;main&gt;
+        &lt;!-- section --&gt;
+        &lt;section id="home"&gt;
+          // Section content
+        &lt;/section&gt;
+      &lt;/main&gt; // End main
+      &lt;footer&gt;
+        // Footer contents
+      &lt;/footer&gt;
+    &lt;!-- Scripts--&gt;
+    // Scripts
+  &lt;/body&gt;
+&lt;/html&gt;</pre>
+      <p><strong>Note: Its important to leave this structure intact. So when copying a section, make sure its inside the "main" element.</strong></p>
+      <h4>Bootstrap</h4>
+      <p>Neoto is powered by Bootstrap v4.5.2. All the goodies that <a href="https://getbootstrap.com/docs/4.5/getting-started/introduction/" target="_blank">Bootstrap</a> has to offer work well with Neoto.</p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="CSS">
+  <div class="container">
+    <div class="col-7">
+      <h2>CSS Structure</h2>
+      <p>Neoto's main css file is well-structured. The table of contents is found at the top of the file: main.css, and looks as follows:</p>
+      <pre>/*
+
+  main.css - All the Neoto CSS goodies
+  Version 1.0
+  by ThemeVillain
+
+  
+  00. fonts
+  01. variables
+  02. helpers
+  03. typography
+  04. animation
+  05. cursor
+  06. header
+  07. slider
+  08. layout
+  09. components
+  10. elements
+  11. responsive
+  12. lightbox
+
+*/</pre>
+      <p>Although its good to know the structure, you probably want to use a seperate css file for customisation of the template. Don't worry, this one is especially prepared for you!</p>
+      <h4>Custom CSS</h4>
+      <p>To make customisations, a custom.css file already exists and is included in the &lt;head&gt;. All you need to do is add your own nifty styles there.</p>
+      <h4>Utilities</h4>
+      <p>Neoto comes with a bunch of sleeky CSS Helper classes, mostly inherited from Bootstrap so less custom CSS is needed. You can do a lot of visual customisation by only changing the markup! Here's <a href="https://getbootstrap.com/docs/4.5/utilities/borders/" target="_blank">the list</a> to help you get started.</p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="JS">
+  <div class="container">
+    <div class="col-7">
+      <h2>JS</h2>
+      <p>All of Neoto's Vanilla Javascript goodies are found in the <strong>src/scripts/</strong> folder.</p>
+      <h3>cursor.js</h3>
+      <p>The custom cursor script</p>
+      <h3>functions.js</h3>
+      <p>All custom scripts and behavior that Neoto has to offer.</p>
+      <h3>lightbox.js</h3>
+      <p>The lightbox script!</p>
+      <h3>slider.js</h3>
+      <p>Uses GlideSlider for all the sliding magic that happens on the front page.</p>
+      <h3>main.bundle.js</h3>
+      <p>The template itself uses all these scripts in 1 bundled file called main.bundle.js. This is makes your page load faster</p>
+      <h3>Modification</h3>
+      <p>If you'd like to modify this main.bundle.js, please make use of Webpack (see README.md)</p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="Navigation">
+  <div class="container">
+    <div class="col-7">
+      <h2>Navigation</h2>
+      <p>There are many ways to navigate, such as links or anchors, but using the old good main menu is up first:</p>
+      <h4>Navigation structure</h4>
+      <pre>&lt;ul id="nav"&gt;
+  &lt;li class="nav-item active"&gt;&lt;a class="nav-link" href&gt;Link&lt;/a&gt;&lt;/li&gt;
+  &lt;li class="nav-item dropdown"&gt;
+    &lt;a class="nav-link dropdown-toggle" href="#" role="button"&gt;Dropdown&lt;/a&gt;
+    &lt;div class="dropdown-menu"&gt;
+      &lt;a class="dropdown-item" href&gt;Dropdown item&lt;/a&gt;
+      &lt;a class="dropdown-item" href&gt;Dropdown item&lt;/a&gt;
+      ... etc.
+    &lt;/div&gt;
+  &lt;/li&gt;
+  ... etc.
+&lt;/ul&gt;</pre>
+      <p>So we got all the structure covered above. This shows a typical usage including dropdown items. As you can see, these dropdown items are wrapped in div. Please use all the classes as shown, or your functionality will break.</p>
+      <h4>Anchor links</h4>
+      <p>Neoto includes anchor links! To use them, just add the ".anchor-link" class to your link, and use the corresponding ID of the section you want to scroll to as the href attribute.</p>
+      <h5>Anchor links structure</h5>
+      <pre>&lt;a href="#id_of_section" class="anchor-link"&gt;Anchor Link&lt;/a&gt;</pre>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="Lightbox">
+  <div class="container">
+    <div class="col-7">
+      <h2>Lightbox</h2>
+      <p>What is a portfolio without a lightbox? Exactly: not much. So ThemeVillain took the time to create a lightweight lightbox script from scratch, using vanilla JS. Its like The Flash, but on steroids.</p>
+      <h3>How do I use it?</h3>
+      <p>You will need at least 2 things:</p>
+      <ul class="list">
+        <li>A container &lt;div&gt; that holds the lightbox items. Be sure this element has the <i>.gallery</i> class, so you can scroll through the items when lightboxed!</li>
+        <li>Lightbox items inside of it. Using a simple &lt;a&gt; link that refers to the large images using the <strong>href</strong> attribute. Also fon't forget the .lightbox class!</li>
+      </ul>
+      <h3>Structure</h3>
+      <pre>&lt;div class="gallery"&gt;
+  &lt;a class="lightbox" href="path/to/large-image.jpg?preset=blur"&gt;
+    // Thumbnail image here
+  &lt;/a&gt;
+  ... etc.
+&lt;/div&gt;</pre>
+      <p>That's it! You're set.</p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="Slider">
+  <div class="container">
+    <div class="col-7">
+      <h2>Slider</h2>
+      <p>Awesome isn't it? The slider Neoto uses is based on the popular <a href="https://glidejs.com/" target="_blank">GlideJS Slider</a>. If you'd like to tweak it, feel free to do so by using Webpack 4 (see README.md) and its <a href="https://glidejs.com/docs/" target="_blank">documentation</a>.</p>
+    </div>
+  </div>
+</section>
+<section class="border-bottom py-6" id="Contact">
+  <div class="container">
+    <div class="col-7">
+      <h2>Contact form</h2>
+      <p>Usually ThemeVillain's Templates make use of a PHP script to handle email. This is however, a bit outdated and vulnerable way to have a contact form on your site. So from now on, HTML templates will only include markup and styles for forms.</p>
+      <h3>Formspree.io</h3>
+      <p>This is an API (there are many more) that makes it possible to transform your contact form markup into a fully functional and safe one with just one line of code. See <a href="https://formspree.io/" target="_blank">formspree.io</a> for more details.</p>
+    </div>
+  </div>
+</section>
+    </main>
+    <footer>
+      <div class="container-fluid p-5">
+        <div class="d-flex justify-content-between align-items-center">
+          <div class="social"><a class="trigger" href="#">Follow</a>
+            <ul class="social-nav">
+              <li> <a href="#">Instagram</a></li>
+              <li> <a href="#">Twitter</a></li>
+              <li> <a href="#">Vimeo</a></li>
+              <li> <a href="#">YouTube</a></li>
+            </ul>
+          </div>
+          <div class="copy">2020 &copy; YourBrand. All rights reserved</div><a class="to-top" href="#">
+            <svg class="bi" width="32" height="32" fill="currentColor">
+              <use xlink:href="images/bootstrap-icons.svg#chevron-compact-up"></use>
+            </svg></a>
+        </div>
+      </div>
+    </footer>
+    <script src="../template/main.bundle.js"></script>
+  </body>
+</html>

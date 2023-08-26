@@ -1,0 +1,25 @@
+extends partials/layout.pug
+block content
+    section
+        .container-fluid.py-6
+            h1.in-top
+                | Blog &mdash; Grid
+                br
+                | Stories like no other.
+        .container-fluid
+            .grid
+                .grid-sizer.col-1
+                +gridItemBlog('Flourish Away',require("./images/preview/thumbs/16.jpg?preset=blur"),'col-4')
+                +gridItemBlog('Suit up',require("./images/preview/thumbs/10.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Mix it up',require("./images/preview/thumbs/8.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Next-gen Shoes',require("./images/preview/thumbs/17.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Back to Tapes',require("./images/preview/thumbs/6.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Turn the page',require("./images/preview/thumbs/7.jpg?preset=blur"), 'col-8')
+                +gridItemBlog('Wiremore',require("./images/preview/thumbs/9.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Silk White',require("./images/preview/thumbs/15.jpg?preset=blur"), 'col-4')
+                +gridItemBlog('Branch X',require("./images/preview/thumbs/5.jpg?preset=blur"), 'col-4')
+        .container.my-5.py-6
+            .row.justify-content-md-center.text-center
+                .col-sm-5
+                    h4 Curated Stories For Creatives
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover.

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylk - The Photographer's Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=4">
+  </head>
+  <body>
+    <div id="wrapper" class="sidebar">
+      <aside id="main-sidebar"><a href="../../template/index.html" class="brand"><span class="name">Sylk</span><span class="title hidden-xs">Documentation</span></a>
+        <div class="responsive-nav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/get-started.html">Get started</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+            <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+            <li><a href="../pages/cheat-sheet.html">Cheatsheet</a></li>
+            <li><a href="../pages/contact-form.html">Contact form</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <div class="hero half vcenter">
+          <div class="row">
+            <div class="col-md-12"></div>
+            <h1>Template Structure</h1>
+            <p>To get to know what you've bought.</p>
+          </div>
+        </div>
+        <div class="mb-xl">
+          <div class="row">
+            <div class="col-md-12">
+              <h2 class="mt-lg">Sylk template</h2>
+              <ol class="list mb-xl">
+                <li> <span>index.html (overview)</span></li>
+                <li> <span>/css/ (all the styles)</span></li>
+                <li> <span>/fonts/ (font icons)</span></li>
+                <li> <span>/images/ (your images)</span></li>
+                <li> <span>/js/</span>
+                  <ol class="list">
+                    <li><span>functions.js (template functions)</span></li>
+                    <li><span>vendor.js (all vendor scripts combined)</span></li>
+                  </ol>
+                </li>
+                <li> <span>/modules/</span>
+                  <ol class="list">
+                    <li><span>tera-lightbox (Tera Lightbox 4.0) - Themanoid's exclusive</span></li>
+                    <li><span>titan-slider (Titan Slider 2.0) - Themanoid's exclusive</span></li>
+                    <li><span>img-scroller (IMG Scroller) - Themanoid's exclusive</span></li>
+                  </ol>
+                </li>
+                <li> <span>/pages/</span>
+                  <ol class="list">
+                    <li><span>/about/ (about page)</span></li>
+                    <li><span>/clients/ (client page)</span></li>
+                    <li><span>/contact/ (contact page)</span></li>
+                    <li><span>/homepages/ (homepage variants)</span></li>
+                    <li><span>/portfolio/ (portfolio pages)</span></li>
+                  </ol>
+                </li>
+                <li> <span>/php/ (mail script)</span></li>
+              </ol>
+            </div>
+          </div>
+        </div>
+        <section>
+          <div class="row vcenter">
+            <div class="col-md-5">
+              <h2>HTML Structure</h2>
+              <p>Most pages have a structure like this:</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <pre class="mt-md">&lt;html&gt;
+	&lt;body&gt; // Add your favorite helper classes here
+		&lt;div id="wrapper"&gt; // The wrapper
+			&lt;header&gt; 
+				// Logo and main navigation
+			&lt;/header&gt; 
+			&lt;section class="x"&gt; 
+				// Section - can be a portfolio grid or content
+			&lt;/section&gt; 
+		&lt;/div&gt; 
+		// Scripts
+	&lt;/body&gt;
+&lt;/html&gt; </pre>
+            </div>
+          </div>
+        </section>
+        <section class="mt-xl">
+          <div class="row vcenter">
+            <div class="col-md-6">
+              <pre class="mt-md">/*----------------------
+
+	Sylk - CSS 1.0
+	By Themanoid
+
+	Table of Contents
+
+	00.  Header
+	01.  Sidebar
+	02.  Navigation
+	03.  Homepages
+	04.  Portfolio
+	05.  About
+	06.  Contact
+	07.  Buttons
+	08.  Modules
+
+-----------------------*/</pre>
+            </div>
+            <div class="col-md-5 col-md-offset-1">
+              <h2>CSS Structure</h2>
+              <p>The Elements.css file has all the styled elements used in Sylk. You can modify this stylesheet at your own risk.</p>
+              <p>To adjust styles, it's better to override them using the custom.css file, also included with Sylk.</p>
+            </div>
+          </div>
+        </section>
+        <section class="mt-xl mb-xl">
+          <div class="row">
+            <div class="col-md-12"><span class="mr-lg">Next up</span><a href="portfolio.html" class="btn btn-default">Portfolio</a></div>
+          </div>
+        </section>
+      </section>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,26 @@
+.jumbotron.jumbotron-fluid.vh-75.d-flex.align-items-center.bg-dark.text-white
+    .bg.o-7(style='background-image:url('+require("./images/preview/projectnext.jpg?preset=blur")+');')
+    .container.text-center
+        a.no-link(href = 'project-single.html')
+            h6 Next project
+            h1 Redundant Optics
+    footer.project
+        .container-fluid.p-5
+            .d-flex.justify-content-between.align-items-center
+                .social
+                    a.trigger(href = '#') Follow
+                    ul.social-nav
+                        li 
+                            a(href = '#') Instagram
+                        li 
+                            a(href = '#') Twitter
+                        li 
+                            a(href = '#') Vimeo
+                        li 
+                            a(href = '#') YouTube
+                .copy 2020 &copy; YourBrand. All rights reserved
+                a.to-top(href = '#')
+                    svg.bi(width='32', height='32', fill='currentColor')
+                        use(xlink:href='images/bootstrap-icons.svg#chevron-compact-up')
+block scripts
+    script(src = 'main.bundle.js')

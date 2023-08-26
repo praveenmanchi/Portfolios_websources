@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylk - The Photographer's Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=4">
+  </head>
+  <body>
+    <div id="wrapper" class="sidebar">
+      <aside id="main-sidebar"><a href="../../template/index.html" class="brand"><span class="name">Sylk</span><span class="title hidden-xs">Documentation</span></a>
+        <div class="responsive-nav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/get-started.html">Get started</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+            <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+            <li><a href="../pages/cheat-sheet.html">Cheatsheet</a></li>
+            <li><a href="../pages/contact-form.html">Contact form</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <div class="hero half vcenter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10">
+                <h1>Portfolio</h1>
+                <p>A look inside.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-5">
+              <h2>The grid portfolio</h2>
+              <p>The grid container is a div element that always holds the '.img-grid' class. <br>Within, there's a '.item-sizer' element and all the '.item' elements that hold the thumbnails.</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <pre class="mt-md">// The grid container
+&lt;div class="img-grid"&gt;
+	&lt;div class="item-sizer"&gt;&lt;/div&gt;
+		// The item
+		&lt;a class="item lightbox" href="path/to/full-photo.jpg"&gt; // Lightbox item
+			// Item image
+		&lt;/a&gt;
+		// Another item
+		&lt;a class="item lightbox" href="path/to/full-photo.html"&gt; 
+			// Item image
+		&lt;/a&gt;
+		... Etc.
+	&lt;/div&gt;
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+          <div class="row mt-xl">
+            <div class="col-md-5">
+              <h2>Items</h2>
+              <p>Items are links that include the ".item" class. Within the link there's a thumbnail image and a caption div that's holding the title.</p>
+              <p>For lightbox items, just add 'ligtbox' class and make sure the 'href' attribute holds the full-size image.</p>
+              <p>Additionally you can add a filter class. We will explain that later.</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <pre class="mt-md">// The item
+&lt;a class="item lightbox filter-class" href="path/to/full-image.jpg&gt;
+	&lt;img src="path/to/thumbnail.jpg"/&gt;
+	&lt;div class="caption"&gt; // Optional caption
+		&lt;h4&gt;Caption title&lt;/h4&gt; // Caption title
+	&lt;/div&gt;
+&lt;/a&gt;
+// Another item</pre>
+            </div>
+          </div>
+          <div class="row mt-xl">
+            <div class="col-md-5">
+              <h2>Columns and spacing</h2>
+              <p>With Sylk you can choose your own columns and spacing by simply adding classes like ".col-2" or ".spacious" to the image grid container. </p>
+              <p>Additionally you can just use multiple sizes of images to get a Masonry effect.</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <pre class="mt-md">// A 2-column grid
+&lt;div class="img-grid col-2"&gt;
+	// Items
+&lt;/div&gt;
+
+// A 3-column grid
+&lt;div class="img-grid col-3"&gt;
+	// Items
+&lt;/div&gt;
+
+// A 4-column grid (default)
+&lt;div class="img-grid"&gt;
+	// Items
+&lt;/div&gt;
+
+// A spacious grid
+&lt;div class="img-grid spacious"&gt;
+	// Items
+&lt;/div&gt;</pre>
+            </div>
+          </div>
+          <div class="row mt-xl">
+            <div class="col-md-5">
+              <h2>Filters!</h2>
+              <p>To get a filterable portfolio, we refer to the <strong>/pages/portfolio-category-filters.html</strong> page.</p>
+              <p>You can adjust filters by adjusting the "data-filter" attribute and fill it with the class you want to have filtered.</p>
+              <p>Lastly, add the desired class to the ".item" element inside the grid and it will show up when the filter is chosen!</p>
+            </div>
+            <div class="col-md-6 col-md-offset-1">
+              <pre class="mt-md">// Filter container
+&lt;div id="filters"&gt;
+	&lt;ul&gt;
+		&lt;li&gt;
+			&lt;a href="#" data-filter=".class"&gt;Filter name&lt;/a&gt;
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;/div&gt;
+</pre>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-xl mb-xl">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-12"><span class="mr-lg">Next up</span><a href="tera-lightbox.html" class="btn btn-default">Tera Lightbox</a></div>
+          </div>
+        </div>
+      </section>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap/dist/js/bootstrap.js'
+import './template/js/functions'
+import './template/sass/index.scss'
+import './template/images/bootstrap-icons.svg'

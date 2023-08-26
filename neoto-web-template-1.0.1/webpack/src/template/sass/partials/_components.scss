@@ -1,0 +1,182 @@
+.jumbotron {
+    position: relative;
+    margin: 0;
+    .bg {
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        right: 0;
+        z-index: 0;
+        background-size: cover;
+        background-position: center;
+        background-repeat: no-repeat;
+        + div {
+            position: relative;
+            z-index: 1;
+        }
+    }
+}
+
+footer {
+    pointer-events: none;
+    z-index: 999 !important;
+    a {
+        pointer-events: initial;
+        color: $black;
+        transition: color .3s;
+    }
+    .copy {
+        opacity: .5;
+        font-size: .9em;
+    }
+}
+
+.text-white {
+    footer {
+        a {
+            color: white !important;
+        }
+    }
+}
+
+.plan {
+    text-align: center;
+    padding: 2em 0 3em;
+    margin: 0;
+    background: white;
+    border: 1px solid $lightgrey;
+    h3 {
+        margin: 0;
+        line-height: 2em;
+    }
+    ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        li {
+            padding: .5em 1em;
+            color: $grey;
+            strong {
+                color: $black;
+            }
+        }
+    }
+    .price {
+        font-size: 2em;
+        line-height: 2em;
+        span {
+            font-size: 1rem;
+            opacity: .5;
+        }
+    }
+    .btn {
+        margin-top: 2em;
+        &:hover {
+            color: white;
+        }
+    }
+    &.highlighted {
+        background: white;
+        border: 1px solid $black;
+        border-top: .5em solid $black;
+        margin-top: -.5em;
+        h3 {
+            font-weight: 700;
+        }
+    }
+}
+
+.social {
+    position: relative;
+    display: inline-block;
+    text-align: inherit !important;
+    .trigger {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        z-index: 2;
+        text-decoration: none;
+        font-weight: 600;
+        font-size: .675em;
+        text-transform: uppercase;
+        letter-spacing: .4em;
+        color: $black;
+    }
+    .social-nav {
+        position: absolute;
+        z-index: 99999;
+        top: 0;
+        bottom: 0;
+        left: 100%;
+        display: flex;
+        list-style: none;
+        padding: 0 1em;
+        margin: 0;
+        align-items: flex-start;
+        flex-direction: column-reverse;
+        li {
+            padding: 0;
+            margin: 0;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .4s;
+            transform: translateX(-5px);
+            transition-delay: 0s;
+            a {
+                padding: 1em;
+                background-color: white;
+                text-decoration: none;
+                opacity: 1;
+                transition: .2s opacity;
+                color: $black;
+                font-weight: 400;
+                font-size: .675em;
+                text-transform: uppercase;
+                letter-spacing: .4em;
+                &:hover {
+                   opacity: .5;
+                }
+            }
+        }
+    }
+    &:hover {
+        .social-nav {
+            li {
+                opacity: 1;
+                visibility: visible;
+                transform: translateX(0);
+                @for $i from 1 to 10 {
+                    &:nth-child(#{$i}){
+                        transition-delay: $i * 0.06s;
+                    }
+                }
+            }
+        }
+    }
+}
+
+.text-right .social {
+    .social-nav {
+        flex-direction: column-reverse;
+        right: 100%;
+        left: auto;
+        align-items: flex-end;
+    }
+}
+
+.alt-footer, .text-white, .bg-dark {
+    .social-nav {
+        li {
+            a {
+                background-color: transparent;
+            }
+            &:first-child {
+                &:before {
+                    left: auto;
+                    right: 1em;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,216 @@
+
+/*-------------------------------------------------------*/
+/* Typography
+/*-------------------------------------------------------*/
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+h1,h2,h3,h4,h5,h6 {
+  font-family: $heading-font;
+  margin-top: 0;
+  color: $heading-color;
+  font-weight: 600;
+  letter-spacing: -0.03em;
+  line-height: 1.2;
+}
+
+h1 { font-size: 32px; }
+h2 { font-size: 28px; }
+h3 { font-size: 24px; }
+h4 { font-size: 20px; }
+h5 { font-size: 18px; }
+h6 { font-size: 16px; }
+
+h1 > a, h2 > a, h3 > a, h4 > a, h5 > a, h6 > a {
+  color: inherit;
+}
+
+h1 small, h2 small, h3 small, h4 small, h5 small, h6 small {
+  color: $heading-color;
+  font-size: 85%;
+  font-weight: bold;
+}
+
+.heading {
+  position: relative;
+  margin-bottom: 0;
+
+  &.large {
+    font-size: 42px;
+  }
+}
+
+.heading-row {
+  margin-bottom: 70px;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+  outline: none;
+  @include transition (color .1s ease-in-out);
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    color: $bg-dark;
+    outline: none;
+  }
+}
+
+.underline {
+  border-bottom: 1px solid $border-color;
+
+  &:hover {
+    border-color: $bg-dark;
+  }
+}
+
+b, strong { color: $heading-color; }
+.lead-heading.white strong {
+  color: #fff;
+}
+
+p {
+  font-size: 17px;
+  color: $text-color;
+  font-weight: normal;
+  line-height: 31px;
+}
+
+.list-inline {
+  margin: 0;
+}
+
+.bottom-line:after {
+  content: "";
+  display: block;
+  width: 50px;
+  border-bottom: 3px solid $main-color;
+  margin: 22px auto 0;
+  z-index: 1;
+  position: relative;
+}
+
+.bottom-line.left-align:after {
+  margin: 22px auto 22px 0;
+}
+
+.bottom-line.grey:after {
+  border-color: #e4e4e4;
+}
+
+.bottom-line.full-grey:after {
+  width: 100%;
+  border-color: $border-color;
+  margin-top: 16px;
+}
+
+
+@media (min-width: 768px) {
+  .lead {
+    font-size: 18px;
+  }
+}
+
+.lead {
+  margin-bottom: 10px;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 30px;
+}
+
+p.large {
+  font-size: 120%;
+  line-height: 1.8;
+}
+
+.fsz-50 {
+  font-size: 50px;
+}
+
+.fsz-16 {
+  font-size: 16px;
+}
+
+blockquote {
+  padding: 10px 0 10px 40px;
+  margin: 0;
+  border-left: 3px solid #e5e5e5;
+
+  & > p {
+    font-size: 17px;
+    line-height: 30px;
+    font-family: $heading-font;
+    margin-bottom: 7px !important;
+    color: $text-color;
+    position: relative;
+  }
+
+  & > span {
+    color: $heading-color;
+    font-size: 14px;
+  }
+}
+
+.highlight {
+  padding: 3px 5px;
+  color: #fff;
+  background-color: $main-color;
+}
+
+.list li {
+  line-height: 24px;
+  position: relative;
+
+  i {
+    line-height: 21px;
+  }
+}
+
+.bullets li,
+.arrows li,
+.checks li,
+.numbers li {
+  margin-bottom: 20px;
+  color: $text-color;
+}
+
+.bullets li {
+  padding-left: 15px;
+}
+
+.bullets li:before {
+  content: "\2022";
+  font-size: 18px;
+  position: absolute;
+  left: 0;
+  color: $main-color;
+}
+
+.arrows i {
+  margin-right: 5px;
+}
+
+.arrows i,
+.checks i {
+  color: $main-color;
+}
+
+.checks i {
+  font-size: 12px;
+  margin-right: 7px;
+  vertical-align: middle;
+}
+
+ol.numbers {
+  padding-left: 20px;
+}
+
+.section-columns p {
+  margin-bottom: 40px;
+}

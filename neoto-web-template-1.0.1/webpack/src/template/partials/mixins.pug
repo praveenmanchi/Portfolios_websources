@@ -1,0 +1,25 @@
+mixin card(title,name,imgsrc)
+    .card.bg-dark.text-white.hoverable
+        img.card-img(alt = 'Neoto - Creative Studio Portfolio Template' src = imgsrc)
+        .card-img-overlay
+            .card-title
+                div.title=title
+                div.name=name
+
+mixin gridItem(title,imgsrc,cls)
+    a(class = 'grid-item '+cls, href = 'project-single.html')
+        img(alt = 'Neoto - Creative Studio Portfolio Template' src = imgsrc)
+        .caption.p-3
+            .title=title
+            
+mixin gridItemBlog(title,imgsrc,cls)
+    a(class = 'grid-item '+cls, href = 'blog-single.html')
+        img(alt = 'Neoto - Creative Studio Portfolio Template' src = imgsrc)
+        .caption.p-3
+            .title=title
+
+mixin gridItemLightbox(title,imgsrc,cls)
+    a(class = 'lightbox grid-item '+cls, href = imgsrc)
+        img(alt = 'Neoto - Creative Studio Portfolio Template' src = imgsrc)
+        .caption.p-3
+            .title=title

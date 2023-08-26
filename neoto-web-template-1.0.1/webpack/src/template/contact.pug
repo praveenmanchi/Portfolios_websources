@@ -1,0 +1,43 @@
+extends partials/layout-dark.pug
+block content
+    section.jumbotron.jumbotron-fluid.pb-0.bg-dark
+        .bg.o-5(style='background-image:url('+require("./images/preview/contact.jpg?preset=blur")+');')
+        .container.text-white.py-5
+            .row
+                .col-lg-8.offset-lg-2 
+                    h1.massive.in-left
+                        span#typed
+                        span#typed-strings
+                            span Contact
+                            span 접촉
+                            span Kāhea
+                            span Kontakt
+            .row.mt-5
+                .col-lg-5.offset-lg-2
+                    p.in-top Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy.                    
+            .row
+                .col-lg-8.offset-lg-2
+                    h2.mt-5 Write To Us
+                    form.mt-4.mb-n10
+                        .form-group
+                            input#name.form-control(type='text', placeholder='John Doe')
+                        .form-group
+                            input#email.form-control(type='email', placeholder='Email')
+                        .form-group
+                            textarea#message.form-control(rows='8' placeholder='Message')
+                        button.btn(type='submit') Send
+    section.pb-10.border-bottom.pb-6
+        .container
+            .row
+                .col-lg-8.offset-lg-2
+                    h2 Projects done right <br> when schedules are tight.
+                    .border-bottom.my-5
+            .row.size-sm
+                .col-lg-4.offset-lg-2
+                    p <strong>Neoto HQ</strong><br>801  Grim Avenue<br>California CA 02110
+                .col-lg-1.offset-lg-1
+                    p 
+                        strong Phone<br>Mail<br>Twitter<br>
+                .col-lg-2.text-right
+                    p 022 15 11 65 46<br>your@email.com<br>@neototemplate
+                

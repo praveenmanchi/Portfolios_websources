@@ -1,0 +1,49 @@
+/*
+
+  main.css - All the Neoto CSS goodies
+  Version 1.0
+  by ThemeVillain
+
+  
+  00. fonts
+  01. variables
+  02. helpers
+  03. typography
+  04. animation
+  05. cursor
+  06. header
+  07. slider
+  08. layout
+  09. components
+  10. elements
+  11. responsive
+  12. lightbox
+
+*/
+
+@import // 00. fonts
+        '../fonts/inter/inter', 
+        // 01. variables
+        'partials/variables', 
+        // 02. helpers
+        'partials/helpers', 
+        // 03. typography
+        'partials/typography', 
+        // 04. animation
+        'partials/animation', 
+        // 05. cursor
+        'partials/cursor', 
+        // 06. header
+        'partials/header', 
+        // 07. slider
+        'partials/slider', 
+        // 08. layout
+        'partials/layout', 
+        // 09. components
+        'partials/components',
+        // 10. elements
+        'partials/elements',
+        // 11. responsive
+        'partials/responsive',
+        // 12. lightbox
+        'partials/lightbox';

@@ -1,0 +1,22 @@
+body {
+    .in-left {
+        transition: all .6s .3s;
+        opacity: 0 !important;
+        transform: translateX(-20px);
+    }
+    .in-top {
+        transition: all .6s .6s;
+        opacity: 0 !important;
+        transform: translateY(-20px);
+    }
+    &.loaded {
+        .in-left {
+            opacity: 1 !important;
+            transform: translateX(0);
+        }
+        .in-top {
+            opacity: 1 !important;
+            transform: translateY(0);
+        }
+    }
+}

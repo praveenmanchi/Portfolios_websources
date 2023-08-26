@@ -1,0 +1,11 @@
+-locals.headerClass = 'text-white'
+include mixins
+doctype html
+html(lang="en")
+    include head
+    body(class = bodyclass)
+        include header
+        main
+            block content
+        include footer
+        block scripts

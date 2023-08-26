@@ -1,0 +1,46 @@
+extends partials/layout.pug
+block content
+    .glide.slider
+        .glide__track(data-glide-el='track')
+            ul.glide__slides
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.vh-100.d-flex.align-items-center
+                        .bg.o-8(style='background-image:url('+require("./images/preview/blog-hero6.jpg?preset=blur")+')')
+                        .container-fluid.py-6
+                            h4 Oct 10, 2020 &mdash; by Dan
+                            h1.massive.pt-2
+                                span.d-block Facing
+                                span.d-block Yourself
+                            a.btn(href = 'blog-single.html') Read story
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.vh-100.d-flex.align-items-center
+                        .bg.o-8(style='background-image:url('+require("./images/preview/blog-hero3.jpg?preset=blur")+')')
+                        .container-fluid.py-6
+                            h4 Oct 6, 2020 &mdash; by Ellis
+                            h1.massive.pt-2
+                                span.d-block Top 10 
+                                span.d-block Books
+                            a.btn(href = 'blog-single.html') Read story
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.vh-100.d-flex.align-items-center
+                        .bg.o-8(style='background-image:url('+require("./images/preview/blog-hero5.jpg?preset=blur")+')')
+                        .container-fluid.py-6
+                            h4 Oct 3, 2020 &mdash; by Dan
+                            h1.massive.pt-2
+                                span.d-block Recycled
+                                span.d-block Suits
+                            a.btn(href = 'blog-single.html') Read story
+                li.glide__slide.invert
+                    .jumbotron.jumbotron-fluid.vh-100.d-flex.align-items-center
+                        .bg.o-8(style='background-image:url('+require("./images/preview/blog-hero4.jpg?preset=blur")+')')
+                        .container-fluid.py-6
+                            h4 Oct 1, 2020 &mdash; by Doria
+                            h1.massive.pt-2
+                                span.d-block Ctrl + Air
+                            a.btn(href = 'blog-single.html') Read story
+        .glide__bullets(data-glide-el='controls[nav]')
+            .glide__bullet(data-glide-dir='=0') 1
+            .glide__bullet(data-glide-dir='=1') 2
+            .glide__bullet(data-glide-dir='=2') 3
+            .glide__bullet(data-glide-dir='=3') 4
+            .glide__bullet.total 4

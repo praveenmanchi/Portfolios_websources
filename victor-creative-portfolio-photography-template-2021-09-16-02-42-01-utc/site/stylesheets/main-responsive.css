@@ -1,0 +1,219 @@
+/* Media Queries
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+/*
+Note: The best way to structure the use of media queries is to create the queries 
+near the relevant code. For example, if you wanted to change the styles for buttons
+on small devices, paste the mobile query code up in the buttons section and style it 
+there. 
+*/
+
+
+/* Larger than Desktop HD */
+@media (max-width: 1200px) {
+    .container {
+        width: 1000px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+}
+
+/* Larger than desktop */
+@media (max-width: 992px) {
+    .container {
+        width: 792px;
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .text-left, .text-right {
+        text-align: center;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+    .highlights-section h3{
+        margin-bottom: 30px;
+    }
+    .works-masonry-container .works-item{
+        width: 48% !important;
+    }
+    .header-section h2{
+        padding: 0 80px;
+    }
+    .signature{
+        padding: 30px 220px 0 220px;
+    }
+}
+
+/* Larger than desktop */
+@media (max-width: 991px) {
+    .container {
+        width: 700px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .menu-holder nav ul li{
+        display: block;
+    }
+
+}
+
+/* Larger than tablet */
+@media (max-width: 768px) {
+    .container {
+        width: 668px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .text-left, .text-right, .mastfoot, .credits, .services-item {
+        text-align: center;
+    }
+
+    .img-responsive {
+        display: inline-block;
+    }
+
+    .mobile-nav {
+        display: block;
+            }
+    .tricker, .tricker * {
+      height: 126px;
+    }
+    .tricker h2 {
+        font-size: 124px;
+    }
+    .tricker h3 {
+        font-size: 80px;
+    }
+    .tricker h4 {
+        font-size: 40px;
+    }
+}
+
+/*iPhone 6Plus Landscape Mode*/
+@media screen and (max-width: 736px) {
+    .container {
+        width: 636px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+}
+
+
+/*iPhone 6 Landscape Mode*/
+@media screen and (max-width: 667px) {
+    .container {
+        width: 567px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .works-masonry-container .works-item{
+        width: 100% !important;
+        margin-left: 0 !important;
+        margin-right: 0 !important;
+    }
+    .signature{
+        padding: 30px 150px 0 150px;
+    }
+}
+
+
+/*Google Nexus and Other Large Smart Phones v1*/
+@media screen and (max-width: 600px) {
+    .container {
+        width: 500px;
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+    .menu-holder nav ul li{
+        font-size: 2.5rem;
+    }
+}
+
+/*iPhone Landscape Mode and Mediium Smart Phones*/
+@media screen and (max-width: 480px) {
+    .container {
+        width: 400px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .tricker, .tricker * {
+      height: 92px;
+    }
+    .tricker h2 {
+        font-size: 90px;
+    }
+    .tricker h3 {
+        font-size: 60px;
+    }
+    .tricker h4 {
+        font-size: 30px;
+    }
+    .highlights-section h1, .blog-section h2 {
+        font-size: 48px;
+    }
+    h1, .h1, .blog-section h2 > span {
+        font-size: 24px;
+    }
+    h2, .h2{
+        font-size: 24px;
+    }
+    .works-thumbnails-view .works-item-inner p > span{
+        font-size: 18px;
+    }
+    .works-filter.autograph-kraft li{
+        display: block;
+        border-bottom: solid 1px #ccc;
+        padding: 4px 0;
+    }
+    .header-section h2{
+        padding: 0 50px;
+    }
+    .signature{
+        padding: 30px 100px 0 100px;
+    }
+    .blog-list-item h3{
+        font-size: 18px;
+    }
+}
+
+/*iPhone 6Plus Portrait Mode*/
+@media screen and (max-width: 414px) {
+    .container {
+        width: 374px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+}
+
+/*iPhone 6 Portrait Mode*/
+@media screen and (max-width: 375px) {
+    .container {
+        width: 335px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .tricker, .tricker * {
+      height: 64px;
+    }
+    .tricker h2 {
+        font-size: 62px;
+    }
+    .tricker h3 {
+        font-size: 40px;
+    }
+    .tricker h4 {
+        font-size: 20px;
+    }
+}
+
+/*iPhone 5S, 5, 4S & 4 Portrait Mode and Very Small Mobile Phones*/
+@media screen and (max-width: 320px) {
+    .container {
+        width: 300px;
+        padding-left: 10px;
+        padding-right: 10px;
+    }
+}

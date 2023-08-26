@@ -1,0 +1,42 @@
+header(class = 'fixed-top '+headerClass)
+    .navbar
+        a.navbar-brand(href = 'index.html') 
+            img.default(alt="Neoto - Creative Studio Portfolio Template" src = require('../images/logo.svg'))
+            img.inverted(alt="Neoto - Creative Studio Portfolio Template" src = require('../images/logo-white.svg'))
+        button.navbar-toggler(type='button', data-toggle='collapse', data-target='#navbar')
+            span.toggle-label Menu
+            span.toggle-label-close Close
+            span.toggle-icon
+                span.line
+                span.line
+    ul#nav
+        li.nav-item.active
+            a.nav-link(href='index.html') home
+        li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#', role='button' data-toggle='dropdown')
+                | pages
+            .dropdown-menu
+                a.dropdown-item(href='about.html') About
+                a.dropdown-item(href='services.html') Services
+                a.dropdown-item(href='404.html') 404
+        li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#', role='button' data-toggle='dropdown')
+                | portfolio
+            .dropdown-menu
+                a.dropdown-item(href='projects-grid.html') Projects - Grid
+                a.dropdown-item(href='projects-slider.html') Projects - Slider
+                a.dropdown-item(href='projects-lightbox.html') Projects - Lightbox
+                a.dropdown-item(href='project-single.html') Project single
+                a.dropdown-item(href='project-single-hero.html') Project single - Hero
+                a.dropdown-item(href='project-single-alt.html') Project single - Alt
+        li.nav-item.dropdown
+            a.nav-link.dropdown-toggle(href='#', role='button' data-toggle='dropdown')
+                |blog
+            .dropdown-menu
+                a.dropdown-item(href='blog-slider.html') Blog - Slider
+                a.dropdown-item(href='blog-grid.html') Blog - Grid
+                a.dropdown-item(href='blog-single.html') Blog single
+                a.dropdown-item(href='blog-single-alt.html') Blog single - Alt
+                a.dropdown-item(href='blog-single-hero.html') Blog single - Hero
+        li.nav-item
+            a.nav-link(href='contact.html') contact

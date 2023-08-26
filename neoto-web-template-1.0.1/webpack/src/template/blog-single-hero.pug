@@ -1,0 +1,18 @@
+extends partials/layout-dark.pug
+block content
+    section.pt-0
+        .jumbotron.jumbotron-fluid.vh-50.d-flex.align-items-center.bg-dark.text-white
+            .bg.o-7(style='background-image:url('+require("./images/preview/blog-hero.jpg?preset=blur")+');')
+            .container.text-center
+                h5.in-left Inside story
+                h1.in-top The Art of One Monk
+        .container.py-6
+            .row
+                .offset-sm-2.col-sm-8
+                    h3 Gravity Invulnerability
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    img.img-fluid.w-100.my-4(alt="Neoto - Creative Studio Portfolio Template" src = require('./images/preview/blog1.jpg?preset=blur'))
+                    h3 An unobstrusive approach
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+                    p Many desktop publishing packages and web page editors now use Lorem Ipsum as their default model text, and a search for 'lorem ipsum' will uncover many web sites still in their infancy. Various versions have evolved over the years, sometimes by accident, sometimes on purpose (injected humour and the like).
+        include partials/comments

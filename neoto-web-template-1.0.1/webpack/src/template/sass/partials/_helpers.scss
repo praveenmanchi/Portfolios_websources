@@ -1,0 +1,76 @@
+@for $o from 1 through 9 {
+    .o-#{$o} {
+        opacity: $o / 10;
+    }
+}
+
+.mb-n10 {
+    margin-bottom: -10em;
+}
+
+.mt-10 {
+    margin-top: 10em;
+}
+
+.pb-10 {
+    padding-top: 10em;
+}
+
+.mb-10 {
+    margin-bottom: 10em;
+}
+
+.vh-50 {
+    height: 50vh;
+}
+
+.vh-75 {
+    height: 75vh;
+}
+
+.no-link {
+    text-decoration: none !important;
+    color: inherit !important;
+}
+
+.py-6 {
+    padding-top: 4rem;
+    padding-bottom: 4rem;
+}
+
+.pt-6 {
+    padding-top: 4rem;
+}
+
+.pb-6 {
+    padding-bottom: 4rem;
+}
+
+.mt-6 {
+    margin-top: 4rem;
+}
+
+.mb-6 {
+    margin-bottom: 4rem;
+}
+.center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.size-sm {
+    font-size: .8em;
+}
+
+.size-2 {
+    font-size: 2em;
+}
+
+.size-3 {
+    font-size: 2em;
+}
+
+.size-4 {
+    font-size: 2em;
+}

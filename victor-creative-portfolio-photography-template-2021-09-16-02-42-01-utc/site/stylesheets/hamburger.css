@@ -1,0 +1,70 @@
+.spinner-master * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master {position:relative;margin:50px auto;height:50px;width:50px;}
+
+.spinner-master input[type=checkbox] {display:none;}
+.spinner-master label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:10px;left:0;}
+
+.spinner-master .spinner {position:absolute;height:5px;width:100%;background-color:#000;}
+
+.spinner-master .diagonal.part-1 {position:relative;float:left;}
+.spinner-master .horizontal {position:relative;float:left;margin-top:6px;}
+.spinner-master .diagonal.part-2 {position:relative;float:left;margin-top:6px;}
+
+.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .horizontal {opacity: 0;}
+.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-1 {transform:rotate(405deg);-webkit-transform:rotate(405deg);margin-top:10px;}
+.spinner-master input[type=checkbox]:checked ~ .spinner-spin > .diagonal.part-2 {transform:rotate(-405deg);-webkit-transform:rotate(-405deg);margin-top:-16px;}
+
+/*SECOND VERSION*/
+.spinner-master2 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master2 {position:relative;margin:50px auto;height:50px;width:50px;}
+
+.spinner-master2 input[type=checkbox] {display:none;}
+.spinner-master2 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:10px;left:0;}
+
+.spinner-master2 .spinner2 {position:absolute;height:5px;width:100%;background-color:#000;}
+
+.spinner-master2 .diagonal.part-1 {position:relative;float:left;}
+.spinner-master2 .horizontal {position:relative;float:left;margin-top:7px;}
+.spinner-master2 .diagonal.part-2 {position:relative;float:left;margin-top:6px;}
+
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .horizontal {opacity: 0;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-1 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:10px;}
+.spinner-master2 input[type=checkbox]:checked ~ .spinner-spin2 > .diagonal.part-2 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:-16px;}
+
+/*THIRD VERSION*/
+.spinner-master3 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master3 {position:relative;margin:50px auto;height:50px;width:50px;}
+
+.spinner-master3 input[type=checkbox] {display:none;}
+.spinner-master3 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:10px;left:0;}
+
+.spinner-master3 .spinner3 {position:absolute;height:5px;width:100%;background-color:#000;}
+
+.spinner-master3 .diagonal.part-1 {position:relative;float:left;}
+.spinner-master3 .horizontal {position:relative;float:left;margin-top:6px;}
+.spinner-master3 .diagonal.part-2 {position:relative;float:left;margin-top:6px;}
+
+.spinner-master3 input[type=checkbox]:checked ~ .spinner-spin3 > .horizontal {transform:scale(2,1);-webkit-transform:scale(2,1); opacity: 0;}
+.spinner-master3 input[type=checkbox]:checked ~ .spinner-spin3 > .diagonal.part-1 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:10px;}
+.spinner-master3 input[type=checkbox]:checked ~ .spinner-spin3 > .diagonal.part-2 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:-16px;}
+
+/*FORTH VERSION*/
+.spinner-master4 * {transition:all 0.3s;-webkit-transition:all 0.3s;box-sizing:border-box;}
+
+.spinner-master4 {position:relative;margin:50px auto;height:50px;width:50px;}
+
+.spinner-master4 input[type=checkbox] {display:none;}
+.spinner-master4 label {cursor:pointer;position:absolute;z-index:99;height:100%;width:100%;top:10px;left:0;}
+
+.spinner-master4 .spinner4 {position:absolute;height:5px;width:100%;background-color:#000;}
+
+.spinner-master4 .diagonal.part-1 {position:relative;float:left;}
+.spinner-master4 .horizontal {position:relative;float:left;margin-top:6px;}
+.spinner-master4 .diagonal.part-2 {position:relative;float:left;margin-top:6px;}
+
+.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .horizontal {transform:translate(-100px, 0px);-webkit-transform:translate(-100px, 0px); opacity: 0;}
+.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-1 {transform:rotate(-135deg);-webkit-transform:rotate(-135deg);margin-top:10px;}
+.spinner-master4 input[type=checkbox]:checked ~ .spinner-spin4 > .diagonal.part-2 {transform:rotate(135deg);-webkit-transform:rotate(135deg);margin-top:-16px;}

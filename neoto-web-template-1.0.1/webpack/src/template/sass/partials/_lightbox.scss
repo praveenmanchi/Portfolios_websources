@@ -1,0 +1,156 @@
+/*
+
+	NM lightbox CSS
+	Version 1.0
+
+*/
+
+#lightbox {
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 99999;
+	visibility: hidden;
+	opacity: 0;
+	.inner {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: $black;
+		opacity: 0;
+	}
+	img {
+		width: auto;
+		height: auto;
+		margin: auto;
+		max-height: 80%;
+		max-width: 80%;
+		position: absolute;
+		transform: translate(-50%,-50%);
+		left: 50%;
+		top: 50%;
+		border-radius: 5px;
+		will-change: width, height;
+		&.zoomable {
+			cursor: zoom-in;
+		}
+		&.zoomed-in {
+			cursor: zoom-out;
+		}
+	}
+	button {
+		border: 0;
+	}
+}
+
+.prev-lightbox-item, .next-lightbox-item  {
+	position: fixed;
+	top: 50%;
+	background-color: black;
+	height: 60px;
+	width: 60px;
+	margin-top: -30px;
+	cursor: pointer;
+	&:after, &:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 20px;
+		height: 1px;
+		top: 50%;
+		left: 50%;
+		margin-left: -7px;
+		background: white;
+	}
+	&:before {
+		transform: rotate(45deg);
+		margin-top: -7px;
+	}
+	&:after {
+		transform: rotate(-45deg);
+		margin-top: 7px;
+	}
+}
+
+.prev-lightbox-item {
+	transform: rotate(180deg) translate(100%,-5px);
+}
+
+.next-lightbox-item  {
+	transform: translate(100%, 5px);
+	right: 0;
+}
+
+.close-lightbox {
+	height: 60px;
+	width: 60px;
+	position: fixed;
+	top: 0;
+	right: 0;
+	background: black;
+	transform: translate(100%, 0);
+	cursor: pointer;
+	&:after, &:before {
+		content: '';
+		position: absolute;
+		display: block;
+		width: 30px;
+		height: 1px;
+		top: 50%;
+		left: 50%;
+		margin-left: -14px;
+		background: white;
+	}
+	&:before {
+		transform: rotate(45deg);
+		margin-top: 0;
+	}
+	&:after {
+		transform: rotate(-45deg);
+		margin-top: 0;
+	}
+}
+
+.close-lightbox,
+.prev-lightbox-item,
+.next-lightbox-item {
+	outline: none !important;
+	cursor: pointer;
+	&:hover {
+		background-color: #333;
+	}
+}
+
+.lightbox-counter {
+	position: absolute;
+	color: white;
+	display: flex;
+	bottom: 0;
+	right: 0;
+	line-height: 1;
+	font-size: 3em;
+	margin: .3em .5em;
+	transform: translate(0,150%);
+	hr {
+		width: .5em;
+		height: 1px;
+		border: 0;
+		background-color: $grey;
+		transform: rotate(-45deg);
+	}
+	hr,.lightbox-total {
+		opacity: .4;
+	}
+	.lightbox-count {
+		padding-right: .2em;
+		font-weight: 300;
+	}
+	.lightbox-total {
+		padding-left: .2em;
+		font-weight: 300;
+	}
+}

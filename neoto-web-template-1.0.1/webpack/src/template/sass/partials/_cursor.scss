@@ -1,0 +1,181 @@
+#cursor {
+    position: fixed;
+    font-size: 1.25rem;
+    top: 0;
+    left: 0;
+    height: 2em;
+    width: 2em;
+    margin-top: -1em;
+    margin-left: -1em;
+    background-color: rgba(120,120,120,.1);
+    backdrop-filter: blur(20px);
+    z-index: 99999999;
+    pointer-events: none;
+    border-radius: 2em;
+    box-sizing: border-box;
+    transition: width .3s, height .3s, margin .3s, border-width .3s;
+    &:before, &:after {
+        content: '';
+        box-sizing: border-box;
+        border-radius: 1em;
+        margin-top: -.05em;
+        margin-left: -.05em;
+        top: 50%;
+        left: 50%;
+        height: .1em;
+        width: .1em;
+        background: white;
+        position: absolute;
+        border-radius: 2em;
+        transition: transform .3s, margin .3s, height .3s, width .3s, top .3s, left .3s, background-color .3s;
+    }
+    &:before {
+        background: transparent;
+    }
+}
+
+.cursor-text {
+    #cursor {
+        &:before {
+            content: 'I';
+            background: none;
+            color: white;
+            font-family: "Courier New", Courier, monospace;
+            top: 11%;
+            left: 37%;
+        }
+        &:after {
+            opacity: 0;
+        }
+    }
+}
+
+.cursor-active {
+    #cursor {
+        height: 2.5em;
+        width: 2.5em;
+        margin-top: -1.25em;
+        margin-left: -1.25em;
+        border-radius: 3em;
+        &:before, &:after {
+            margin-top: -.1em;
+            margin-left: -.1em;
+            top: 50%;
+            left: 50%;
+            height: .2em;
+            width: .2em;
+        }
+    }
+}
+
+.loading {
+    #cursor {
+        height: 2em;
+        width: 2em;
+        margin-top: -1em;
+        margin-left: -1em;
+        &:after {
+            height: 1em;
+            width: 1em;
+            margin-top: -.5em;
+            margin-left: -.5em;
+            border-radius: 5em;
+            border: 1px solid white;
+            background: none;
+            border-top-color: transparent;
+            animation: rotate .7s infinite linear both;
+        }
+        &:before {
+            height: 2em;
+            width: 2em;
+            margin-top: -1em;
+            margin-left: -1em;
+            border-radius: 5em;
+            border: 1px solid white;
+            background: none;
+            border-top-color: transparent;
+            animation: rotate 2s infinite linear both;
+        }
+    }
+}
+
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+.cursor-lightbox-item:not(.cursor-active):not(.loading) {
+    #cursor {
+        &:before {
+            content: '';
+            width: 1em;
+            margin-top: -0.05em;
+            margin-left: -.495em;
+            background: white;
+        }
+        &:after {
+            content: '';
+            height: 1em;
+            margin-top: -.485em;
+        }
+    }
+}
+
+.slider-hover:not(.cursor-active):not(.loading) { 
+    #cursor {
+        &:before {
+            content: '';
+            background: white;
+            width: .75em;
+            margin-top: .195em;
+            margin-left: -.475em;
+            transform: rotate(45deg);
+        }
+        &:after {
+            content: '';
+            width: .75em;
+            margin-top: -.275em;
+            margin-left: -.475em;
+            transform: rotate(-45deg);
+        }
+    }
+    &.to-right:not(.cursor-active):not(.loading) {
+        #cursor {
+            &:before {
+                top: .5em;
+                left: 1.15em;
+            }
+            &:after {
+                top: 1.45em;
+                left: 1.15em;
+            }
+        }
+    }
+}
+
+/* Disable cursor on touch screens */
+@media (hover: none) and (pointer: coarse) {
+    #cursor {
+        display: none !important;
+    }
+}
+
+/* Disable cursor on touch screens */
+@media screen and (max-width: 1024px) {
+    #cursor {
+        display: none !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    html, body {
+        cursor: none !important;
+        *, a {
+            cursor: none !important;
+        }
+    }
+}

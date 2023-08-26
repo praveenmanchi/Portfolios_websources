@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylk - The Photographer's Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=4">
+  </head>
+  <body>
+    <div id="wrapper" class="sidebar">
+      <aside id="main-sidebar"><a href="../../template/index.html" class="brand"><span class="name">Sylk</span><span class="title hidden-xs">Documentation</span></a>
+        <div class="responsive-nav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/get-started.html">Get started</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+            <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+            <li><a href="../pages/cheat-sheet.html">Cheatsheet</a></li>
+            <li><a href="../pages/contact-form.html">Contact form</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <div class="hero half vcenter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10">
+                <h1>Tera Lightbox</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="content">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-7">
+              <h2>How it works</h2>
+              <p>To add a lightbox item, make sure you have a link with a working image or video url inside the "href" attribute and the .lightbox class added. Like this:</p>
+              <pre class="mt-lg mb-lg">&lt;a href="image/path/image.jpg" class="lightbox"&gt;
+	// Your thumbnail image
+&lt;/a&gt;     </pre>
+              <h2>Lightbox gallery</h2>
+              <p>For any existing lightbox image on a page, the Lightbox script will automatically generate a lightbox gallery which is infinite.</p>
+              <h2>Videos</h2>
+              <p>You can also add MP4, YouTube and Vimeo embed links.</p>
+              <p><strong>Note</strong>: this is not the url of the YouTube video page or Vimeo video page, but looks like this:</p>
+              <h4>YouTube</h4>
+              <p>For YouTube us the video ID from the video URL, like this: <strong>https://www.youtube.com/embed/&lt;VIDEO_ID&gt;</strong></p>
+              <h4>Vimeo</h4>
+              <p>For Vimeo us the video ID from the video URL, like this: <strong>//player.vimeo.com/video/&lt;VIDEO_ID&gt;</strong></p>
+              <p>You can see examples of the embed links inside the index.html. No need to add additional classes (other than .lightbox). The lightbox script will automatically see if it's a Vimeo or YouTube link and will act like one.</p>
+              <h4>Mp4</h4>
+              <p>For <strong>Mp4 videos</strong>, just link to the mp4 video inside the href and it will automatically recognize that it's an mp4.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-xl mb-xl">
+        <div class="container"><span class="mr-lg">Next up</span><a href="titan-slider.html" class="btn btn-default">Titan Slider</a></div>
+      </section>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

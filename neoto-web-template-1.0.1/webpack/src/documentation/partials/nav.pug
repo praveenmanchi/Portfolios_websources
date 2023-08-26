@@ -1,0 +1,25 @@
+section#Navigation.border-bottom.py-6
+  .container
+    .col-7
+      h2 Navigation
+      p There are many ways to navigate, such as links or anchors, but using the old good main menu is up first:
+      h4 Navigation structure
+      pre.
+        &lt;ul id="nav"&gt;
+          &lt;li class="nav-item active"&gt;&lt;a class="nav-link" href&gt;Link&lt;/a&gt;&lt;/li&gt;
+          &lt;li class="nav-item dropdown"&gt;
+            &lt;a class="nav-link dropdown-toggle" href="#" role="button"&gt;Dropdown&lt;/a&gt;
+            &lt;div class="dropdown-menu"&gt;
+              &lt;a class="dropdown-item" href&gt;Dropdown item&lt;/a&gt;
+              &lt;a class="dropdown-item" href&gt;Dropdown item&lt;/a&gt;
+              ... etc.
+            &lt;/div&gt;
+          &lt;/li&gt;
+          ... etc.
+        &lt;/ul&gt;
+      p So we got all the structure covered above. This shows a typical usage including dropdown items. As you can see, these dropdown items are wrapped in div. Please use all the classes as shown, or your functionality will break.
+      h4 Anchor links
+      p Neoto includes anchor links! To use them, just add the ".anchor-link" class to your link, and use the corresponding ID of the section you want to scroll to as the href attribute.
+      h5 Anchor links structure
+      pre.
+        &lt;a href="#id_of_section" class="anchor-link"&gt;Anchor Link&lt;/a&gt;

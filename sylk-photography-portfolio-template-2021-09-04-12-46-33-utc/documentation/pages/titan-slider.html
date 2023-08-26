@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Sylk - The Photographer's Portfolio Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="utf-8">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="stylesheet" type="text/css" href="../../template/css/core.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/elements.css">
+    <link rel="stylesheet" type="text/css" href="../../template/css/custom.css">
+    <link rel="icon" type="image/png" href="../../template/favicon.png?version=4">
+  </head>
+  <body>
+    <div id="wrapper" class="sidebar">
+      <aside id="main-sidebar"><a href="../../template/index.html" class="brand"><span class="name">Sylk</span><span class="title hidden-xs">Documentation</span></a>
+        <div class="responsive-nav">
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+        </div>
+        <nav class="main-nav">
+          <ul>
+            <li><a href="../index.html">Index</a></li>
+            <li><a href="../pages/get-started.html">Get started</a></li>
+            <li><a href="../pages/template-structure.html">Template Structure</a></li>
+            <li><a href="../pages/portfolio.html">Portfolio</a></li>
+            <li><a href="../pages/tera-lightbox.html">Tera Lightbox</a></li>
+            <li><a href="../pages/titan-slider.html">Titan Slider</a></li>
+            <li><a href="../pages/cheat-sheet.html">Cheatsheet</a></li>
+            <li><a href="../pages/contact-form.html">Contact form</a></li>
+          </ul>
+        </nav>
+      </aside>
+      <section>
+        <div class="hero half vcenter">
+          <div class="container">
+            <div class="row">
+              <div class="col-md-10">
+                <h1>Titan Slider</h1>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="medium">
+        <div class="container content">
+          <div class="row">
+            <div class="col-md-8">   
+              <h3>HTML Structure</h3>
+              <p>The Titan slider is lightweight and has an easy-to-use HTML structure, as follows:</p>
+              <pre>&lt;div class="slider"&gt;
+	&lt;ul class="slides"&gt;
+		&lt;li class="slide"&gt;
+			// Content slide 1
+		&lt;/li&gt;
+		&lt;li class="slide"&gt;
+			// Content slide 2
+		&lt;/li&gt;
+	&lt;/ul&gt;
+&lt;div&gt;      </pre>
+              <p>Knowing this, you can add as many slides as you want.</p>
+              <h3>Slide background</h3>
+              <p>The slide background is actually a div object that owns a style property with the corresponding background image url. Just like this:</p>
+              <pre>// Inside .slide &gt; section.hero
+&lt;div class="bg" style="background-image:url(url-to-image)"&gt;&lt;/div&gt;   </pre>
+              <h3>Dark mode for dark backgrounds</h3>
+              <p>For light on dark slides, Be has a special class you can add. Add the <strong>".dark"</strong> class to the <strong>&lt;li class="slide"&gt;</strong> element inside the slider to change the colors of the text and header to white when the active slide has this class.</p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="mt-xl mb-xl">
+        <div class="container"><span class="mr-lg">Next up</span><a href="cheat-sheet.html" class="btn btn-default">Cheat sheet</a></div>
+      </section>
+    </div>
+    <script src="../../template/js/vendor.js"></script>
+    <script src="../../template/js/functions.js"></script>
+  </body>
+</html>

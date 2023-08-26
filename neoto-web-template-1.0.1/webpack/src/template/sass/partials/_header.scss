@@ -1,0 +1,255 @@
+header {
+    transition: all .3s;
+    z-index: 1050;
+    padding: 2em;
+}
+
+.navbar-brand {
+    font-size: .8em;
+    font-weight: 600;
+    position: relative;
+    display: flex;
+    align-items: center;
+    img {
+        position: absolute;
+        transition: opacity .3s;
+        &.inverted {
+            opacity: 0;
+        }
+    }
+}
+
+body.scrolled {
+    header {
+        padding: 0;
+        backdrop-filter: saturate(180%) blur(20px);
+        background-color: rgba(255,255,255,.6);
+        &.text-white {
+            background-color: rgba(0,0,0,.2);
+        }
+    }
+    &.scrolled-up {
+        header {
+            transform: translateY(0);
+        }
+    }
+}
+
+#nav {
+    position: fixed;
+    height: 100vh;
+    width: 100vw;
+    left: 100vw;
+    top: 0;
+    opacity: 0;
+    padding: 6em 2.33em;
+    transition: all .3s 0s, left 0s .3s;
+    background-color: $black;
+    z-index: 999;
+    text-align: right;
+    overflow-y: scroll;
+    .nav-item {
+        display: block;
+        clear: both;
+        float: right;
+        font-size: 2em;
+        line-height: 1.3;
+        transform: translateX(20px);
+        transition: all .5s;
+        opacity: 0;
+        width: auto;
+        a.nav-link {
+            color: $black;
+            font-weight: 300;
+            opacity: .7;
+            transition: opacity .3s;
+        }
+        @for $i from 1 to 10 {
+            &:nth-child(#{$i}){
+                transition-delay: $i * 0s;
+            }
+        }
+        .dropdown-menu {
+            position: relative;
+            display: block;
+            opacity: 0;
+            visibility: hidden;
+            transition: all .3s;
+            text-align: right;
+            max-height: 0;
+            padding: 0;
+            .dropdown-item {
+                background: none;
+                width: auto;
+                padding: .25em 1em;
+                opacity: 0;
+                visibility: hidden;
+                transition: visibility .3s opacity .3s max-height 1s;
+                transform: translateX(10px);
+                @for $i from 1 to 10 {
+                    &:nth-child(#{$i}){
+                        transition-delay: $i * 0s;
+                    }
+                }
+            }
+            &.show {
+                visibility: visible;
+                opacity: 1;
+                max-height: 400px;
+                transition: all .8s;
+                .dropdown-item {
+                    visibility: visible;
+                    opacity: 1;
+                    transform: translateX(0);
+                    @for $i from 1 to 10 {
+                        &:nth-child(#{$i}){
+                            transition-delay: $i * 0.08s;
+                        }
+                    }
+                }
+            }
+        }
+        .dropdown-toggle {
+            cursor: default;
+            &:after {
+                display: none;
+            }
+        }
+        &:hover {
+            a.nav-link {
+                opacity: 1;
+            }
+            a.dropdown-item {
+                opacity: .6 !important;
+                transition-delay: 0s !important;
+                &:hover {
+                    opacity: 1 !important;
+                    background: none !important;
+                }
+            }
+        }
+    }
+}
+
+.navbar-toggler { 
+    border-width: 0;
+    outline: none !important;
+    padding-right: 0;
+    .toggle-icon {
+        width: 2em;
+        .line {
+            display: block;
+            margin: .305em 0 .315em;
+            border-bottom: 1px solid $black;
+            transition: all .3s;
+            &:first-child {
+                margin-top: .255em;
+            }
+        }
+    }
+    span {
+        display: inline-block;
+        vertical-align: middle;
+    }
+    .toggle-label, .toggle-label-close {
+        width: 7em;
+        font-weight: 300;
+        font-size: .575em;
+        text-transform: uppercase;
+        letter-spacing: .4em;
+        color: $black;
+        overflow: hidden;
+        transition: all .3s;
+        max-width: 9em;
+    }
+    .toggle-label-close {
+        max-width: 0;
+        opacity: 0;
+        transform: scale(.5);
+    }
+    &:hover {
+        .toggle-label {
+            max-width: 9em;
+            opacity: 1;
+            transform: scale(1);
+        }
+    }
+}  
+    
+.nav-open {
+    .navbar-toggler { 
+        &:hover {
+            .toggle-label {
+                max-width: 0;
+                opacity: 0;
+                transform: scale(.5);
+            }
+            .toggle-label-close {
+                max-width: 9em;
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+    }
+    .navbar {
+        z-index: 1000;
+        .toggle-icon {
+            .line {
+                margin: 0;
+                &:first-child {
+                    transform: rotate(45deg);
+                    margin: -1px 0;
+                }
+                &:last-child {
+                    transform: rotate(-45deg);
+                }
+            }
+        }
+    }
+    #nav {
+        opacity: 1;
+        left: 0;
+        transition: opacity .3s, left 0s;
+        > .nav-item {
+            transform: translateX(0);
+            opacity: 1;
+            @for $i from 1 to 10 {
+                &:nth-child(#{$i}){
+                    transition-delay: $i * 0.08s;
+                }
+            }
+        } 
+    }
+}
+
+body.nav-open header #nav, 
+body.nav-open header .navbar,
+body header.text-white #nav, 
+body header.text-white .navbar,
+body.dark-slide header #nav, 
+body.dark-slide header .navbar {
+    * {
+        color: white !important;
+        border-color: white !important;
+    }
+    .dropdown-menu {
+        background-color: $black;
+        border-color: $black !important;
+        .dropdown-item {
+            background-color: $black;
+            &:hover {
+                background-color: $grey;
+            } 
+        }
+    }
+    .navbar-brand {
+        img {
+            &.default {
+                opacity: 0;
+            }
+            &.inverted {
+                opacity: 1;
+            }
+        }
+    }
+}

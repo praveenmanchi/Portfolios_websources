@@ -1,0 +1,20 @@
+footer
+    .container-fluid.p-5
+        .d-flex.justify-content-between.align-items-center
+            .social
+                a.trigger(href = '#') Follow
+                ul.social-nav
+                    li 
+                        a(href = '#') Instagram
+                    li 
+                        a(href = '#') Twitter
+                    li 
+                        a(href = '#') Vimeo
+                    li 
+                        a(href = '#') YouTube
+            .copy 2020 &copy; YourBrand. All rights reserved
+            a.to-top(href = '#')
+                svg.bi(width='32', height='32', fill='currentColor')
+                    use(xlink:href='images/bootstrap-icons.svg#chevron-compact-up')
+block scripts
+    script(src = 'main.bundle.js')

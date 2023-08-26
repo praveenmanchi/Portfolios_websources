@@ -1,0 +1,72 @@
+<!DOCTYPE html><html lang="en"><head><head><link rel="stylesheet" href="../template/styles/main.css"><link rel="stylesheet" href="../template/styles/custom.css"><link rel="stylesheet" href="../template/styles/switch.css"><link href="https://fonts.googleapis.com/css?family=Archivo:400,700" rel="stylesheet"><meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel="apple-touch-icon" sizes="180x180" href="../template/favicon/apple-touch-icon.png"><link rel="icon" type="image/png" sizes="32x32" href="../template/favicon/favicon-32x32.png"><link rel="icon" type="image/png" sizes="16x16" href="../template/favicon/favicon-16x16.png"><link rel="manifest" href="../template/favicon/site.webmanifest"><link rel="mask-icon" href="../template/favicon/safari-pinned-tab.svg" color="#ff4f4f"><link rel="shortcut icon" href="../template/favicon/favicon.ico"><meta name="msapplication-TileColor" content="#ffffff"><meta name="msapplication-config" content="../template/favicon/browserconfig.xml"><meta name="theme-color" content="#ffffff"><title>Gumo, A Simple Portfolio</title></head></head><body><div class="wrapper"><!-- Main Header--><header class="main-header"><a class="brand" href="/"><img alt="Gumo dummy image" src="../template/img/logo.svg"><div class="description">Documentation</div></a><!-- Main Navigation--><nav class="main-nav"><ul class="nav-items"><li class="nav-trigger">Menu</li><li><a class="nav-item" href="#HTML">HTML</a></li><li><a class="nav-item" href="#CSS">CSS</a></li><li><a class="nav-item" href="#JS">JS</a></li><li><a class="nav-item" href="#Navigation">Navigation</a></li><li><a class="nav-item" href="#Lightbox">Lightbox</a></li><li><a class="nav-item" href="#Contact">Form</a></li></ul></nav></header><div class="content"><section class="border-bottom" id="Start"><div class="container"><div class="grid h-center"><div class="col-7 col-7"><h1>Documentation</h1><h2>Foreword</h2><p class="text-size-1">Hello and thank you for purchasing Gumo! Its creator, ThemeVillain is always striving for the best possible quality for its templates and themes. If you encounter bugs or need something special done with your template, please contact support@themevillain.com.</p><br><h3>Tips from a pro</h3><p>Trust me, these are helpful!</p><p><ul class="list"><li>Never start from scratch.</li><li>Use the custom.css included to make changes to your styles.</li><li>Please read these docs carefully before contacting support. You might be helped more quickly.</li><li>If the docs don&apos;t help, use Google or stackoverflow for your specific problem.</li><li>Use find and replace all, if you&apos;d like to change more files at once.</li><li>Contact support@themevillain.com for customisation jobs or bug reports.</li></ul></p></div></div></div></section><section class="border-bottom" id="HTML"><div class="container"><div class="grid h-center"><div class="col-7"><h2>HTML structure</h2><p>Gumo maintains a default HTML structure throughout the template. This makes it easy to mix and reuse templates. For instance, if you want to have a certain section to be on another page, just copy and paste the entire component.</p><pre>&lt;html lang="en"&gt;
+  &lt;head&gt;
+    &lt;head&gt;
+      // Meta
+      // Styles
+      // Page title
+    &lt;/head&gt;
+  &lt;/head&gt;
+  &lt;body class="alt-nav"&gt;
+    &lt;div class="wrapper"&gt;
+      &lt;!-- Main Header--&gt;
+      &lt;header class="main-header"&gt;
+        &lt;a class="brand" href="/"&gt;
+          // Brand
+          &lt;img src="img/logo.svg"&gt;
+        &lt;/a&gt;
+        &lt;!-- Main Navigation --&gt;
+        &lt;nav class="main-nav"&gt;
+          &lt;ul class="nav-items"&gt;
+            &lt;li class="nav-trigger"&gt;Menu&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav-item" href="#work"&gt;Work&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav-item" href="#about"&gt;About&lt;/a&gt;&lt;/li&gt;
+            &lt;li&gt;&lt;a class="nav-item" href="#contact"&gt;Hire me&lt;/a&gt;&lt;/li&gt;
+            ... More items?
+          &lt;/ul&gt;
+        &lt;/nav&gt;
+      &lt;/header&gt;
+      &lt;div class="content"&gt;
+        &lt;!-- Home section --&gt;
+        &lt;section id="home"&gt;
+          // Section content
+        &lt;/section&gt;
+        &lt;footer class="bg-black p-4"&gt;
+          // Footer contents
+        &lt;/footer&gt;
+      &lt;/div&gt; // End .content
+    &lt;/div&gt; // End .wrapper
+    &lt;!-- Scripts--&gt;
+    // Scripts
+  &lt;/body&gt;
+&lt;/html&gt;</pre><p><strong>Note: Its important to leave this structure as is. So when copying a section, make sure its inside the .content div.</strong></p></div></div></div></section><section class="border-bottom" id="CSS"><div class="container"><div class="grid h-center"><div class="col-7"><h2>CSS Structure</h2><p>Gumo's main css file is well-structured. The table of contents is found at the top of the file: main.css, and looks as follows:</p><pre>/*
+
+  main.css - All the Gumo CSS goodies
+  Version 1.0
+  by ThemeVillain
+
+  01. reset
+  02. variables
+  03. typography
+  04. helpers
+  05. layout
+  06. grid
+  07. blockquote
+  08. form
+  09. header
+  10. buttons
+  11. navigation
+  12. sections
+  13. footer
+  14. list
+  15. thumbnail
+  16. lightbox
+
+*/</pre><p>Although its good to know the structure, you probably want to use a seperate css file for customisation of the template. Don't worry, this one is especially prepared for you!</p><h4>Custom CSS</h4><p>To make customisations, a custom.css file already exists and is included in the &lt;head&gt;. All you need to do is add your own nifty styles there.</p><h4>CSS Helpers</h4><p>Gumo comes with a bunch of sleeky CSS helpers, so less custom CSS is needed. You can do a lot from the markup itself! Here's a list to help you started:</p><ul class="list"><li><strong>.w-[0-10]</strong> &lt; Sets width from 0 to 10 (where 10 = 100% percent)</li><li><strong>.h-[0-10]</strong> &lt; Sets height from 0 to 10 (where 10 = 100% percent)</li><li><strong>.pv-[0-10]</strong> &lt; Sets vertical padding from 0 to 10 (where 1 = 1rem)</li><li><strong>.ph-[0-10]</strong> &lt; Sets horizontal padding from 0 to 10 (where 1 = 1rem)</li><li><strong>.pt-[0-10]</strong> &lt; Sets top padding from 0 to 10 (where 1 = 1rem)</li><li><strong>.pb-[0-10]</strong> &lt; Sets bottom padding from 0 to 10 (where 1 = 1rem)</li><li><strong>.p-[0-10]</strong> &lt; Sets padding from 0 to 10 (where 1 = 1rem)</li><li><strong>.mv-[0-10]</strong> &lt; Sets vertical margin from 0 to 10 (where 1 = 1rem)</li><li><strong>.mh-[0-10]</strong> &lt; Sets horizontal margin from 0 to 10 (where 1 = 1rem)</li><li><strong>.mt-[0-10]</strong> &lt; Sets top margin from 0 to 10 (where 1 = 1rem)</li><li><strong>.mb-[0-10]</strong> &lt; Sets bottom margin from 0 to 10 (where 1 = 1rem)</li><li><strong>.m-[0-10]</strong> &lt; Sets margin from 0 to 10 (where 1 = 1rem)</li><li><strong>.font-size-[0-10]</strong> &lt; Sets font-size from 0 to 10 (where 1 = 1rem)</li><li><strong>.opacity-[0-10]</strong> &lt; Sets opacity from 0 to 10 (where 1 = 0.1)</li></ul></div></div></div></section><section class="border-bottom" id="JS"><div class="container"><div class="grid h-center"><div class="col-7"><h2>JS</h2><p>All of Gumo's Vanilla Javascript goodies are found in the <strong>/scripts/</strong> folder. In version 1, we have 4 files:</p><ul class="list"><li>gumo-lightbox.js</li><li>imagesloaded.pkgd.min.js</li><li>isotope.pkgd.min.js</li><li>main.js</li></ul><h3>gumo-lightbox.js</h3><p>A custom-crafted, very lightweight lightbox script</p><h3>imagesloaded.pkgd.min.js</h3><p>A plugin to call functions after images are loaded. Used by main.js</p><h3>isotope.pkgd.min.js</h3><p>The masonry + filter script for your portfolio!</p><h3>main.js</h3><p>This is where the Gumo magic happens, such as the navigation, scroll behavior and defining the filterable grid.</p></div></div></div></section><section class="border-bottom" id="Navigation"><div class="container"><div class="grid h-center"><div class="col-7"><h2>Navigation</h2><p>Gumo has 2 options for navigation.</p><h4>Classic</h4><p>This is the default mode. No action required.</p><h4>Alternative</h4><p>This mode uses a burger and hides the items until the burger is triggered by click. You choose!</p><p> <strong>Usage: </strong><span>Add an <i>.alt-nav</i> class to your &lt;body&gt;</span></p></div></div></div></section><section class="border-bottom" id="Lightbox"><div class="container"><div class="grid h-center"><div class="col-7 container"><h2>Lightbox</h2><p>What is a portfolio without a lightbox? Exactly: not much. So ThemeVillain took the time to create a lightweight lightbox script from scratch, using vanilla JS. Its like The Flash, but on steroids.</p><h3>How do I use it?</h3><p>You will need at least 2 things:</p><ul class="list"><li>A container &lt;div&gt; that holds the lightbox items. Be sure this element has the <i>.gallery</i> class, so you can scroll through the items when lightboxed!</li><li>The lightbox item inside of it. Using a simple &lt;a&gt; link that refers to the large images using the <strong>href</strong> attribute.</li></ul><h3>Structure</h3><pre>&lt;div class="lightbox"&gt;
+  &lt;a href="path/to/large-image.jpg"&gt;
+    // Thumbnail image here
+  &lt;/a&gt;
+  &lt;a href="path/to/large-image.jpg"&gt;
+    // Thumbnail image here
+  &lt;/a&gt;
+  // Add more!
+&lt;/div&gt;</pre><p>That's it! You're set.</p></div></div></div></section><section id="Contact"><div class="container"><div class="grid h-center"><div class="col-7"><h2>Contact form</h2><p>Usually ThemeVillain's Templates make use of a PHP script to handle email. This is however, a bit outdated and vulnerable way to have a contact form on your site. So from now on, HTML templates will use markup only for them.</p><h3>Formspree.io</h3><p>This is an API (there are many more) that makes it possible to transform your contact form markup into a fully functional and safe one with just one line of code. See <a href="https://formspree.io/" target="_blank">formspree.io</a> for more details.</p></div></div></div></section><section id="End"><div class="container"><div class="grid h-center"><div class="col-7 pv-10"><h1>That's all folks. <br>Happy coding!</h1><p>Made something super awesome or found a bug? <a href="mailto:support@themevillain.com">Let me know</a>!</p></div></div></div></section></div><footer class="bg-black p-4"><div class="grid v-center"><div class="col-6"><span class="text-dark">Designed and built by <a href='http://www.themevillain.com' target='_blank'>ThemeVillain</a> &copy; 2019.</span></div><div class="col-6 text-right"><ul class="secondary-nav"><li><a href="https://themeforest.net/user/themevillain/portfolio" target="_blank">More by ThemeVillain</a></li></ul></div></div></footer></div></body></html>
